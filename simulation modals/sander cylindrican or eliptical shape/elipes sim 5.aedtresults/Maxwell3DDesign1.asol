@@ -1,0 +1,211 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002024, month=000000000010, day=000000000022, hour=000000000020, min=000000000044, sec=000000000009)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000024114, lin=000000000188, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell3DDesign1'
+	VersionID=1868
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=2169
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips0=\'90\' $angle_elips1=\'0.47775993457122379\' $angle_elips10=\'0.8960553845713437\' $angle_elips11=\'1.2508130461244471\' $angle_elips12=\'4.7123889803846897\' $angle_elips13=\'1.2508130461244475\' $angle_elips14=\'0.89605538457134415\' $angle_elips15=\'0.47775993457122468\' $angle_elips2=\'0.89605538457134393\' $angle_elips3=\'1.2508130461244475\' $angle_elips4=\'1.5707963267948966\' $angle_elips5=\'1.2508130461244478\' $angle_elips6=\'0.89605538457134415\' $angle_elips7=\'0.47775993457122401\' $angle_elips8=\'3.1415926535897931\' $angle_elips9=\'0.47775993457122373\' $buffer=\'0mm\' $hieght=\'60mm\' $length_between_row=\'11mm\' $length_between_sheet=\'3.5999999999999996mm\' $mag_bredth=\'10mm\' $mag_length=\'10mm\' $mag_width=\'8mm\' $move_r=\'0mm\' $num_mag_in_ring=\'16\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_sweetspot_touch=\'0.034687395484894752\' $position_x_touch=\'34.793551710121619mm\' $position_y_touch=\'32.180425780368871mm\' $r=\'60mm\' $ratio=\'1.25\' $ratio_mod=\'1\' $rot_angle_around_x=\'nan rad\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'75mm\'', ID=1942)
+		Map(V='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips0=\'90\' $angle_elips1=\'1.2593752238564397\' $angle_elips10=\'1.4382447944982226\' $angle_elips11=\'1.5156239016153534\' $angle_elips12=\'4.7123889803846897\' $angle_elips13=\'1.5156239016153534\' $angle_elips14=\'1.4382447944982226\' $angle_elips15=\'1.2593752238564402\' $angle_elips2=\'1.4382447944982226\' $angle_elips3=\'1.5156239016153534\' $angle_elips4=\'1.5707963267948966\' $angle_elips5=\'1.5156239016153534\' $angle_elips6=\'1.4382447944982226\' $angle_elips7=\'1.2593752238564397\' $angle_elips8=\'3.1415926535897931\' $angle_elips9=\'1.2593752238564395\' $buffer=\'0mm\' $hieght=\'34.793551710121619mm\' $length_between_row=\'10mm\' $length_between_sheet=\'3.3333333333333335mm\' $mag_bredth=\'10mm\' $mag_length=\'10mm\' $mag_width=\'8mm\' $move_r=\'0mm\' $num_mag_in_ring=\'16\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_sweetspot_touch=\'34.687395484894751\' $position_x_touch=\'34.793551710121619mm\' $position_y_touch=\'4.2907234373825158mm\' $r=\'34.793551710121619mm\' $ratio=\'7.5\' $ratio_mod=\'6\' $rot_angle_around_x=\'nan rad\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'260.95163782591214mm\'', ID=2008)
+		Map(V='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips1=\'0.26167008151977811\' $angle_elips10=\'0.57394749880835183\' $angle_elips11=\'1.0010221222001348\' $angle_elips13=\'1.001022122200135\' $angle_elips14=\'0.57394749880835205\' $angle_elips15=\'0.26167008151977861\' $angle_elips2=\'0.57394749880835194\' $angle_elips3=\'1.0010221222001352\' $angle_elips5=\'1.0010221222001354\' $angle_elips6=\'0.57394749880835194\' $angle_elips7=\'0.26167008151977816\' $angle_elips9=\'0.261670081519778\' $buffer=\'0mm\' $distans=\'1mm\' $hieght=\'63.547985734317912mm\' $length_between_row=\'11mm\' $length_between_sheet=\'3.5999999999999996mm\' $mag_bredth=\'10mm\' $mag_length=\'10mm\' $mag_width=\'10mm\' $move_r=\'6mm\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_x_touch=\'37.207765272494719mm\' $position_y_touch=\'57.547985734317912mm\' $r=\'63.547985734317912mm\' $ratio=\'0.64655200000000002\' $ratio_mod=\'0.64655200000000002\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'41.08707727249471mm\'', ID=2147)
+		Map(V='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips1=\'0.3926990816987242\' $angle_elips10=\'0.78539816339744817\' $angle_elips11=\'1.178097245096172\' $angle_elips13=\'1.1780972450961722\' $angle_elips14=\'0.7853981633974485\' $angle_elips15=\'0.39269908169872481\' $angle_elips2=\'0.78539816339744828\' $angle_elips3=\'1.1780972450961724\' $angle_elips5=\'1.1780972450961724\' $angle_elips6=\'0.78539816339744839\' $angle_elips7=\'0.39269908169872425\' $angle_elips9=\'0.39269908169872392\' $buffer=\'0mm\' $distans=\'1mm\' $hieght=\'37.207765272494719mm\' $length_between_row=\'11mm\' $length_between_sheet=\'3.5999999999999996mm\' $mag_bredth=\'10mm\' $mag_length=\'10mm\' $mag_width=\'10mm\' $move_r=\'0mm\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_x_touch=\'37.207765272494719mm\' $position_y_touch=\'37.207765272494719mm\' $r=\'37.207765272494719mm\' $ratio=\'1\' $ratio_mod=\'1\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'37.207765272494719mm\'', ID=2081)
+		Map(V='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips1=\'0.3926990816987242\' $angle_elips10=\'0.78539816339744817\' $angle_elips11=\'1.178097245096172\' $angle_elips13=\'1.1780972450961722\' $angle_elips14=\'0.7853981633974485\' $angle_elips15=\'0.39269908169872481\' $angle_elips2=\'0.78539816339744828\' $angle_elips3=\'1.1780972450961724\' $angle_elips5=\'1.1780972450961724\' $angle_elips6=\'0.7853981633974485\' $angle_elips7=\'0.39269908169872431\' $angle_elips9=\'0.39269908169872397\' $buffer=\'0mm\' $distans=\'1mm\' $hieght=\'58.207765272494711mm\' $length_between_row=\'11mm\' $length_between_sheet=\'3.5999999999999996mm\' $mag_bredth=\'10mm\' $mag_length=\'10mm\' $mag_width=\'10mm\' $move_r=\'21mm\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_x_touch=\'37.207765272494719mm\' $position_y_touch=\'37.207765272494719mm\' $r=\'58.207765272494711mm\' $ratio=\'1\' $ratio_mod=\'1\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'58.207765272494711mm\'', ID=2069)
+		Map(V='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips1=\'0.39269908169872425\' $angle_elips10=\'0.78539816339744817\' $angle_elips11=\'1.178097245096172\' $angle_elips13=\'1.1780972450961722\' $angle_elips14=\'0.7853981633974485\' $angle_elips15=\'0.39269908169872486\' $angle_elips2=\'0.78539816339744828\' $angle_elips3=\'1.1780972450961724\' $angle_elips5=\'1.1780972450961724\' $angle_elips6=\'0.78539816339744839\' $angle_elips7=\'0.39269908169872431\' $angle_elips9=\'0.39269908169872397\' $buffer=\'0mm\' $distans=\'1mm\' $hieght=\'43.207765272494719mm\' $length_between_row=\'11mm\' $length_between_sheet=\'3.5999999999999996mm\' $mag_bredth=\'10mm\' $mag_length=\'10mm\' $mag_width=\'10mm\' $move_r=\'6mm\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_x_touch=\'37.207765272494719mm\' $position_y_touch=\'37.207765272494719mm\' $r=\'43.207765272494719mm\' $ratio=\'1\' $ratio_mod=\'1\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'43.207765272494719mm\'', ID=2148)
+		Map(V='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips1=\'0.42426835324695333\' $angle_elips10=\'0.82866448152164984\' $angle_elips11=\'1.2077922058827921\' $angle_elips13=\'1.2077922058827923\' $angle_elips14=\'0.82866448152165018\' $angle_elips15=\'0.424268353246954\' $angle_elips2=\'0.82866448152164984\' $angle_elips3=\'1.2077922058827926\' $angle_elips5=\'1.2077922058827926\' $angle_elips6=\'0.82866448152164995\' $angle_elips7=\'0.42426835324695344\' $angle_elips9=\'0.424268353246953\' $buffer=\'0mm\' $distans=\'1mm\' $hieght=\'48.42602819101181mm\' $length_between_row=\'11mm\' $length_between_sheet=\'3.5999999999999996mm\' $mag_bredth=\'13.3405mm\' $mag_length=\'10mm\' $mag_width=\'7.9094799999999994mm\' $move_r=\'5.34483mm\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_x_touch=\'43.081198191011808mm\' $position_y_touch=\'32.998684842831686mm\' $r=\'48.42602819101181mm\' $ratio=\'1.0905049328147995\' $ratio_mod=\'0.64655200000000002\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'52.808822618926925mm\'', ID=2115)
+		Map(V='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips1=\'0.44415314073790724\' $angle_elips10=\'0.85455195413173646\' $angle_elips11=\'1.2247538061591603\' $angle_elips13=\'1.2247538061591605\' $angle_elips14=\'0.8545519541317369\' $angle_elips15=\'0.44415314073790801\' $angle_elips2=\'0.85455195413173657\' $angle_elips3=\'1.2247538061591607\' $angle_elips5=\'1.2247538061591607\' $angle_elips6=\'0.85455195413173668\' $angle_elips7=\'0.4441531407379074\' $angle_elips9=\'0.44415314073790713\' $buffer=\'0mm\' $distans=\'1mm\' $hieght=\'67.298912461667584mm\' $length_between_row=\'11mm\' $length_between_sheet=\'3.5999999999999996mm\' $mag_bredth=\'7.9047999999999998mm\' $mag_length=\'10mm\' $mag_width=\'14.5905mm\' $move_r=\'27.068999999999999mm\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_x_touch=\'37.48234809958052mm\' $position_y_touch=\'40.229912461667581mm\' $r=\'67.298912461667584mm\' $ratio=\'1.1488376008248153\' $ratio_mod=\'0.62241400000000002\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'77.315521130581445mm\'', ID=2113)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=1942, Ver=1868, Dir='DV1942_V1868.imesh/')
+		M(VID=2008, Ver=1868, Dir='DV2008_V1868.imesh/')
+		M(VID=2069, Ver=1868, Dir='DV2069_V1868.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=1942, Ver=1868, Dir='DV1942_MI0_V1868.sd/')
+			MI(VID=2008, Ver=1868, Dir='DV2008_MI0_V1868.sd/')
+			MI(VID=2069, Ver=1868, Dir='DV2069_MI0_V1868.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=1685, Instance=\'$angle1=\\\'0.39269908169872414\\\' $angle10=\\\'3.9269908169872414\\\' $angle11=\\\'4.3196898986859651\\\' $angle12=\\\'4.7123889803846897\\\' $angle13=\\\'5.1050880620834143\\\' $angle14=\\\'5.497787143782138\\\' $angle15=\\\'5.8904862254808616\\\' $angle2=\\\'0.78539816339744828\\\' $angle3=\\\'1.1780972450961724\\\' $angle4=\\\'1.5707963267948966\\\' $angle5=\\\'1.9634954084936207\\\' $angle6=\\\'2.3561944901923448\\\' $angle7=\\\'2.748893571891069\\\' $angle8=\\\'3.1415926535897931\\\' $angle9=\\\'3.5342917352885173\\\' $Angle_between=\\\'0.39269908169872414\\\' $angle_elips0=\\\'90\\\' $angle_elips1=\\\'0.47775993457122379\\\' $angle_elips10=\\\'0.8960553845713437\\\' $angle_elips11=\\\'1.2508130461244471\\\' $angle_elips12=\\\'4.7123889803846897\\\' $angle_elips13=\\\'1.2508130461244475\\\' $angle_elips14=\\\'0.89605538457134415\\\' $angle_elips15=\\\'0.47775993457122468\\\' $angle_elips2=\\\'0.89605538457134393\\\' $angle_elips3=\\\'1.2508130461244475\\\' $angle_elips4=\\\'1.5707963267948966\\\' $angle_elips5=\\\'1.2508130461244478\\\' $angle_elips6=\\\'0.89605538457134415\\\' $angle_elips7=\\\'0.47775993457122401\\\' $angle_elips8=\\\'3.1415926535897931\\\' $angle_elips9=\\\'0.47775993457122373\\\' $buffer=\\\'0mm\\\' $hieght=\\\'60mm\\\' $length_between_row=\\\'11mm\\\' $length_between_sheet=\\\'3.5999999999999996mm\\\' $mag_bredth=\\\'10mm\\\' $mag_length=\\\'10mm\\\' $mag_width=\\\'8mm\\\' $move_r=\\\'0mm\\\' $num_mag_in_ring=\\\'16\\\' $num_of_rows=\\\'5\\\' $num_of_sheets=\\\'15\\\' $position_sweetspot_touch=\\\'0.034687395484894752\\\' $position_x_touch=\\\'34.793551710121619mm\\\' $position_y_touch=\\\'32.180425780368871mm\\\' $r=\\\'60mm\\\' $ratio=\\\'1.25\\\' $ratio_mod=\\\'1\\\' $rot_angle_around_x=\\\'nan rad\\\' $sweet_spot=\\\'40mm\\\' $swet_spot_length=\\\'30mm\\\' $width=\\\'75mm\\\'\', Solution=-3, VersionID=1868)'='SolutionBlock5'
+	'SolutionKey(SimSetup=1685, Instance=\'$angle1=\\\'0.39269908169872414\\\' $angle10=\\\'3.9269908169872414\\\' $angle11=\\\'4.3196898986859651\\\' $angle12=\\\'4.7123889803846897\\\' $angle13=\\\'5.1050880620834143\\\' $angle14=\\\'5.497787143782138\\\' $angle15=\\\'5.8904862254808616\\\' $angle2=\\\'0.78539816339744828\\\' $angle3=\\\'1.1780972450961724\\\' $angle4=\\\'1.5707963267948966\\\' $angle5=\\\'1.9634954084936207\\\' $angle6=\\\'2.3561944901923448\\\' $angle7=\\\'2.748893571891069\\\' $angle8=\\\'3.1415926535897931\\\' $angle9=\\\'3.5342917352885173\\\' $Angle_between=\\\'0.39269908169872414\\\' $angle_elips0=\\\'90\\\' $angle_elips1=\\\'1.2593752238564397\\\' $angle_elips10=\\\'1.4382447944982226\\\' $angle_elips11=\\\'1.5156239016153534\\\' $angle_elips12=\\\'4.7123889803846897\\\' $angle_elips13=\\\'1.5156239016153534\\\' $angle_elips14=\\\'1.4382447944982226\\\' $angle_elips15=\\\'1.2593752238564402\\\' $angle_elips2=\\\'1.4382447944982226\\\' $angle_elips3=\\\'1.5156239016153534\\\' $angle_elips4=\\\'1.5707963267948966\\\' $angle_elips5=\\\'1.5156239016153534\\\' $angle_elips6=\\\'1.4382447944982226\\\' $angle_elips7=\\\'1.2593752238564397\\\' $angle_elips8=\\\'3.1415926535897931\\\' $angle_elips9=\\\'1.2593752238564395\\\' $buffer=\\\'0mm\\\' $hieght=\\\'34.793551710121619mm\\\' $length_between_row=\\\'10mm\\\' $length_between_sheet=\\\'3.3333333333333335mm\\\' $mag_bredth=\\\'10mm\\\' $mag_length=\\\'10mm\\\' $mag_width=\\\'8mm\\\' $move_r=\\\'0mm\\\' $num_mag_in_ring=\\\'16\\\' $num_of_rows=\\\'5\\\' $num_of_sheets=\\\'15\\\' $position_sweetspot_touch=\\\'34.687395484894751\\\' $position_x_touch=\\\'34.793551710121619mm\\\' $position_y_touch=\\\'4.2907234373825158mm\\\' $r=\\\'34.793551710121619mm\\\' $ratio=\\\'7.5\\\' $ratio_mod=\\\'6\\\' $rot_angle_around_x=\\\'nan rad\\\' $sweet_spot=\\\'40mm\\\' $swet_spot_length=\\\'30mm\\\' $width=\\\'260.95163782591214mm\\\'\', Solution=-3, VersionID=1868)'='SolutionBlock6'
+	'SolutionKey(SimSetup=1685, Instance=\'$angle1=\\\'0.39269908169872414\\\' $angle10=\\\'3.9269908169872414\\\' $angle11=\\\'4.3196898986859651\\\' $angle12=\\\'4.7123889803846897\\\' $angle13=\\\'5.1050880620834143\\\' $angle14=\\\'5.497787143782138\\\' $angle15=\\\'5.8904862254808616\\\' $angle2=\\\'0.78539816339744828\\\' $angle3=\\\'1.1780972450961724\\\' $angle4=\\\'1.5707963267948966\\\' $angle5=\\\'1.9634954084936207\\\' $angle6=\\\'2.3561944901923448\\\' $angle7=\\\'2.748893571891069\\\' $angle8=\\\'3.1415926535897931\\\' $angle9=\\\'3.5342917352885173\\\' $Angle_between=\\\'0.39269908169872414\\\' $angle_elips1=\\\'0.3926990816987242\\\' $angle_elips10=\\\'0.78539816339744817\\\' $angle_elips11=\\\'1.178097245096172\\\' $angle_elips13=\\\'1.1780972450961722\\\' $angle_elips14=\\\'0.7853981633974485\\\' $angle_elips15=\\\'0.39269908169872481\\\' $angle_elips2=\\\'0.78539816339744828\\\' $angle_elips3=\\\'1.1780972450961724\\\' $angle_elips5=\\\'1.1780972450961724\\\' $angle_elips6=\\\'0.7853981633974485\\\' $angle_elips7=\\\'0.39269908169872431\\\' $angle_elips9=\\\'0.39269908169872397\\\' $buffer=\\\'0mm\\\' $distans=\\\'1mm\\\' $hieght=\\\'58.207765272494711mm\\\' $length_between_row=\\\'11mm\\\' $length_between_sheet=\\\'3.5999999999999996mm\\\' $mag_bredth=\\\'10mm\\\' $mag_length=\\\'10mm\\\' $mag_width=\\\'10mm\\\' $move_r=\\\'21mm\\\' $num_of_rows=\\\'5\\\' $num_of_sheets=\\\'15\\\' $position_x_touch=\\\'37.207765272494719mm\\\' $position_y_touch=\\\'37.207765272494719mm\\\' $r=\\\'58.207765272494711mm\\\' $ratio=\\\'1\\\' $ratio_mod=\\\'1\\\' $sweet_spot=\\\'40mm\\\' $swet_spot_length=\\\'30mm\\\' $width=\\\'58.207765272494711mm\\\'\', Solution=-3, VersionID=1868)'='SolutionBlock7'
+	'SolutionKey(SimSetup=1685, Instance=\'SetupDefinition\', Solution=-1, VersionID=1868)'='SolutionBlock4'
+	'SolutionKey(SimSetup=1685, Instance=\'SolutionDefinition\', Solution=1686, VersionID=1868)'='SolutionBlock2'
+	'SolutionKey(SimSetup=1685, Instance=\'SolutionDefinition\', Solution=1687, VersionID=1868)'='SolutionBlock3'
+$end 'BlockMapName'
+$begin 'SolutionBlock2'
+	SolutionName='AdaptivePass'
+	SolutionID=1686
+	V=1868
+	$begin 'States'
+		F(VID=1942, Ver=1868)
+		F(VID=2008, Ver=1868)
+		F(VID=2069, Ver=1868)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			NFSP(VID=1942, Ver=1868, File='DV1942_SOL1686_NFSP10_V1868.sd')
+			NFSP(VID=2008, Ver=1868, File='DV2008_SOL1686_NFSP10_V1868.sd')
+			NFSP(VID=2069, Ver=1868, File='DV2069_SOL1686_NFSP10_V1868.sd')
+		$end 'SubData'
+	$end 'NFSP'
+$end 'SolutionBlock2'
+$begin 'SolutionBlock3'
+	SolutionName='LastAdaptive'
+	SolutionID=1687
+	V=1868
+	$begin 'States'
+		F(VID=1942, Ver=1868)
+		F(VID=2008, Ver=1868)
+		F(VID=2069, Ver=1868)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		IDDblMap(1947, -1)
+		$begin 'DataMap'
+			VID=1942
+			Ver=1868
+			Field(DblID=1947, Dir='DV1942_SOL1687_V1868.Field1947/')
+		$end 'DataMap'
+		$begin 'DataMap'
+			VID=2008
+			Ver=1868
+			Field(DblID=1947, Dir='DV2008_SOL1687_V1868.Field1947/')
+		$end 'DataMap'
+		$begin 'DataMap'
+			VID=2069
+			Ver=1868
+			Field(DblID=1947, Dir='DV2069_SOL1687_V1868.Field1947/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock3'
+$begin 'SolutionBlock4'
+	SimSetupID=1685
+	SimSetupName='Setup1'
+	VersionID=1868
+	SolveSetupID=3
+	$begin 'CurrMeshes'
+		IDDblMap(1945, -1)
+		$begin 'DataMap'
+			VID=1942
+			Ver=1868
+			M(DblID=1945, Dir='DV1942_S1685_V1868.cmesh1945/')
+		$end 'DataMap'
+		$begin 'DataMap'
+			VID=2008
+			Ver=1868
+			M(DblID=1945, Dir='DV2008_S1685_V1868.cmesh1945/')
+		$end 'DataMap'
+		$begin 'DataMap'
+			VID=2069
+			Ver=1868
+			M(DblID=1945, Dir='DV2069_S1685_V1868.cmesh1945/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'MeshOps'
+		OPS(VID=1942, Ver=1868, ID=5)
+		OPS(VID=2008, Ver=1868, ID=5)
+		OPS(VID=2069, Ver=1868, ID=5)
+	$end 'MeshOps'
+	$begin 'LastPassNumbers'
+		LP(VID=1942, Ver=1868, P=5)
+		LP(VID=2008, Ver=1868, P=5)
+		LP(VID=2069, Ver=1868, P=5)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=1942, Ver=1868, File='DV1942_S1685_V1868.profile')
+		P(VID=2008, Ver=1868, File='DV2008_S1685_V1868.profile')
+		P(VID=2069, Ver=1868, File='DV2069_S1685_V1868.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=1942, Ver=1868, Dir='DV1942_S1685_MI0_V1868.sd/')
+			MI(VID=2008, Ver=1868, Dir='DV2008_S1685_MI0_V1868.sd/')
+			MI(VID=2069, Ver=1868, Dir='DV2069_S1685_MI0_V1868.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock4'
+$begin 'SolutionBlock6'
+	ConvSetupName='ms'
+	MaxPasses='5'
+	MinPasses='2'
+	ConvTarget='(1, 1)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(ee=126.142836469954, de_ee='(126.14, N/A)', p=1, tet=12697, te=8.88893004093303)
+	c(ee=72.78452840544244, de_ee='(72.785, 30.68)', p=2, tet=16509, te=11.61604234235971, de=30.67987135536542)
+	c(ee=44.56866213145575, de_ee='(44.569, 12.277)', p=3, tet=21456, te=13.04217198044322, de=12.27724207652806)
+	c(ee=23.15765349562582, de_ee='(23.158, 9.7021)', p=4, tet=27899, te=14.30753524085189, de=9.702089976317531)
+	c(ee=14.91466670492613, de_ee='(14.915, 4.323)', p=5, tet=36253, te=14.92604681496431, de=4.322977813441967)
+$end 'SolutionBlock6'
+$begin 'SolutionBlock7'
+	ConvSetupName='ms'
+	MaxPasses='5'
+	MinPasses='2'
+	ConvTarget='(1, 1)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(te=15.43940358989681, ee=69.81958156263988, tet=14259, de_ee='(69.82, N/A)', p=1)
+	c(te=17.53236291993074, ee=37.5819006778479, tet=18567, de_ee='(37.582, 13.556)', p=2, de=13.55595970950274)
+	c(te=18.77353404901207, ee=15.39618719316475, tet=24145, de_ee='(15.396, 7.0793)', p=3, de=7.079314606648814)
+	c(te=19.21006813520912, ee=9.684819740666759, tet=31372, de_ee='(9.6848, 2.3253)', p=4, de=2.325263240567225)
+	c(te=19.45519114921716, ee=6.815205160153869, tet=40793, de_ee='(6.8152, 1.276)', p=5, de=1.276013246193353)
+$end 'SolutionBlock7'
+$begin 'SolutionBlock5'
+	ConvSetupName='ms'
+	MaxPasses='5'
+	MinPasses='2'
+	ConvTarget='(1, 1)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(ee=119.4078714981903, tet=14184, p=1, de_ee='(119.41, N/A)', te=10.72009118510715)
+	c(ee=56.65739150452769, tet=18440, p=2, de=16.45441843739419, de_ee='(56.657, 16.454)', te=12.48401984557488)
+	c(ee=27.58632969749934, tet=23956, p=3, de=14.35734331684552, de_ee='(27.586, 14.357)', te=14.2763934345472)
+	c(ee=13.20549898677851, tet=31168, p=4, de=4.841537486308078, de_ee='(13.205, 4.8415)', te=14.96759037437363)
+	c(ee=9.305930088506207, tet=40520, p=5, de=1.935738134377187, de_ee='(9.3059, 1.9357)', te=15.25732372904775)
+$end 'SolutionBlock5'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock5(pos=23407, lin=175, lvl=0)
+		BlockMapName(pos=13391, lin=35, lvl=0)
+		SolutionBlock2(pos=19415, lin=44, lvl=0)
+		SolutionBlock3(pos=20011, lin=68, lvl=0)
+		SolutionBlock4(pos=20746, lin=102, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		SolutionBlock6(pos=21998, lin=149, lvl=0)
+		SolutionBlock7(pos=22702, lin=162, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=24114, lin=188, lvl=0)
+	$end '$index$'
+$end '$index$'

@@ -1,0 +1,138 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002024, month=000000000010, day=000000000022, hour=000000000020, min=000000000046, sec=000000000054)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000006310, lin=000000000117, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell3DDesign1'
+	VersionID=1398
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=1501
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='$angle1=\'0.78539816339744795rad\' $angle10=\'7.8539816339744792rad\' $angle11=\'8.6393797973719266rad\' $angle12=\'9.4247779607693758rad\' $angle13=\'10.210176124166823rad\' $angle14=\'10.995574287564271rad\' $angle15=\'11.78097245096172rad\' $angle2=\'1.5707963267948959rad\' $angle3=\'2.3561944901923439rad\' $angle4=\'3.1415926535897918rad\' $angle5=\'3.9269908169872396rad\' $angle6=\'4.7123889803846879rad\' $angle7=\'5.4977871437821353rad\' $angle8=\'6.2831853071795836rad\' $angle9=\'7.0685834705770318rad\' $Angle_between=\'0.39269908169872397rad\' $buffer=\'10\' $Hieght=\'100mm\' $length_between_row=\'3.5mm\' $length_between_sheet=\'1.6000000000000001mm\' $mag_bredth=\'10mm\' $mag_length=\'10mm\' $mag_width=\'10mm\' $move_r=\'11.2562mm\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_sweetspot_touch=\'0.035355339059327376\' $position_x_touch=\'31.543220298989525mm\' $position_y_touch=\'31.543220298989525mm\' $r=\'46.611539059327377mm\' $r_iner=\'30mm\' $r_outer=\'40mm\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\'', ID=1363)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=1363, Ver=1398, Dir='DV1363_V1398.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=1363, Ver=1398, Dir='DV1363_MI0_V1398.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=88, Instance=\'$angle1=\\\'0.78539816339744795rad\\\' $angle10=\\\'7.8539816339744792rad\\\' $angle11=\\\'8.6393797973719266rad\\\' $angle12=\\\'9.4247779607693758rad\\\' $angle13=\\\'10.210176124166823rad\\\' $angle14=\\\'10.995574287564271rad\\\' $angle15=\\\'11.78097245096172rad\\\' $angle2=\\\'1.5707963267948959rad\\\' $angle3=\\\'2.3561944901923439rad\\\' $angle4=\\\'3.1415926535897918rad\\\' $angle5=\\\'3.9269908169872396rad\\\' $angle6=\\\'4.7123889803846879rad\\\' $angle7=\\\'5.4977871437821353rad\\\' $angle8=\\\'6.2831853071795836rad\\\' $angle9=\\\'7.0685834705770318rad\\\' $Angle_between=\\\'0.39269908169872397rad\\\' $buffer=\\\'10\\\' $Hieght=\\\'100mm\\\' $length_between_row=\\\'3.5mm\\\' $length_between_sheet=\\\'1.6000000000000001mm\\\' $mag_bredth=\\\'10mm\\\' $mag_length=\\\'10mm\\\' $mag_width=\\\'10mm\\\' $move_r=\\\'11.2562mm\\\' $num_of_rows=\\\'5\\\' $num_of_sheets=\\\'15\\\' $position_sweetspot_touch=\\\'0.035355339059327376\\\' $position_x_touch=\\\'31.543220298989525mm\\\' $position_y_touch=\\\'31.543220298989525mm\\\' $r=\\\'46.611539059327377mm\\\' $r_iner=\\\'30mm\\\' $r_outer=\\\'40mm\\\' $sweet_spot=\\\'40mm\\\' $swet_spot_length=\\\'30mm\\\'\', Solution=-3, VersionID=1398)'='SolutionBlock153'
+	'SolutionKey(SimSetup=88, Instance=\'SetupDefinition\', Solution=-1, VersionID=1398)'='SolutionBlock152'
+	'SolutionKey(SimSetup=88, Instance=\'SolutionDefinition\', Solution=89, VersionID=1400)'='SolutionBlock150'
+	'SolutionKey(SimSetup=88, Instance=\'SolutionDefinition\', Solution=90, VersionID=1400)'='SolutionBlock151'
+$end 'BlockMapName'
+$begin 'SolutionBlock150'
+	SolutionName='AdaptivePass'
+	SolutionID=89
+	V=1400
+	$begin 'States'
+		F(VID=1363, Ver=1400)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			NFSP(VID=1363, Ver=1400, File='DV1363_SOL89_NFSP10_V1400.sd')
+		$end 'SubData'
+	$end 'NFSP'
+$end 'SolutionBlock150'
+$begin 'SolutionBlock151'
+	SolutionName='LastAdaptive'
+	SolutionID=90
+	V=1400
+	$begin 'States'
+		F(VID=1363, Ver=1400)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		IDDblMap(1433, -1)
+		$begin 'DataMap'
+			VID=1363
+			Ver=1400
+			Field(DblID=1433, Dir='DV1363_SOL90_V1400.Field1433/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock151'
+$begin 'SolutionBlock152'
+	SimSetupID=88
+	SimSetupName='solution1'
+	VersionID=1398
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		IDDblMap(1431, -1)
+		$begin 'DataMap'
+			VID=1363
+			Ver=1398
+			M(DblID=1431, Dir='DV1363_S88_V1398.cmesh1431/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'LastPassNumbers'
+		LP(VID=1363, Ver=1398, P=10)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=1363, Ver=1398, File='DV1363_S88_V1398.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=1363, Ver=1398, Dir='DV1363_S88_MI0_V1398.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock152'
+$begin 'SolutionBlock153'
+	ConvSetupName='ms'
+	MaxPasses='10'
+	MinPasses='2'
+	ConvTarget='(1, 1)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(de_ee='(169.33, N/A)', tet=1174, ee=169.325796875929, p=1, te=29.67558402299415)
+	c(de_ee='(70.569, 8.5578)', tet=1529, ee=70.56896686915837, p=2, te=27.13599668171927, de=8.557834411302842)
+	c(de_ee='(37.547, 3.2525)', tet=1999, ee=37.54677234000074, p=3, te=28.01858308830226, de=3.252456200282377)
+	c(de_ee='(49.924, 1.8889)', tet=2603, ee=49.92437854398617, p=4, te=28.54781538931269, de=1.88886175772171)
+	c(de_ee='(23.048, 1.8536)', tet=3389, ee=23.04807138021441, p=5, te=28.01866560301831, de=1.853556144588461)
+	c(de_ee='(10.187, 1.7774)', tet=4413, ee=10.18709582945958, p=6, te=27.52067118701433, de=1.777366642151369)
+	c(de_ee='(8.3536, 0.31788)', tet=5746, ee=8.353649733823014, p=7, te=27.43318939758802, de=0.3178766565387693)
+	c(de_ee='(6.0884, 0.9091)', tet=7475, ee=6.088445615298819, p=8, te=27.18379431375334, de=0.9090998506232928)
+	c(de_ee='(5.0577, 0.63923)', tet=9721, ee=5.057679633161921, p=9, te=27.01002724242244, de=0.6392303786781561)
+	c(de_ee='(4.3126, 0.39209)', tet=12643, ee=4.312635225545174, p=10, te=26.90412408406959, de=0.3920883063254462)
+$end 'SolutionBlock153'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock153(pos=5045, lin=99, lvl=0)
+		BlockMapName(pos=1926, lin=24, lvl=0)
+		SolutionBlock150(pos=3588, lin=31, lvl=0)
+		SolutionBlock151(pos=4002, lin=51, lvl=0)
+		SolutionBlock152(pos=4449, lin=73, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=6310, lin=117, lvl=0)
+	$end '$index$'
+$end '$index$'
