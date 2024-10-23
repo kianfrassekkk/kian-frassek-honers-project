@@ -1,0 +1,55 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=3
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='mean_sweet_spot'
+			ValueState(90, 15, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='diffrens'
+			ValueState(90, 15, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='differens_abs'
+			ValueState(90, 15, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=1686
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=1687
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=9
+						SimValueContext(0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0, 'PC', false, '1')
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=3127
+						$begin 'MinorVVMap'
+							MajorVariation='$angle1=\'0.39269908169872414\' $angle10=\'3.9269908169872414\' $angle11=\'4.3196898986859651\' $angle12=\'4.7123889803846897\' $angle13=\'5.1050880620834143\' $angle14=\'5.497787143782138\' $angle15=\'5.8904862254808616\' $angle2=\'0.78539816339744828\' $angle3=\'1.1780972450961724\' $angle4=\'1.5707963267948966\' $angle5=\'1.9634954084936207\' $angle6=\'2.3561944901923448\' $angle7=\'2.748893571891069\' $angle8=\'3.1415926535897931\' $angle9=\'3.5342917352885173\' $Angle_between=\'0.39269908169872414\' $angle_elips0=\'90\' $angle_elips1=\'0.39269908169872414\' $angle_elips10=\'0.78539816339744817\' $angle_elips11=\'1.178097245096172\' $angle_elips12=\'4.7123889803846897\' $angle_elips13=\'1.1780972450961722\' $angle_elips14=\'0.7853981633974485\' $angle_elips15=\'0.39269908169872481\' $angle_elips2=\'0.78539816339744828\' $angle_elips3=\'1.1780972450961724\' $angle_elips4=\'1.5707963267948966\' $angle_elips5=\'1.1780972450961724\' $angle_elips6=\'0.78539816339744839\' $angle_elips7=\'0.39269908169872431\' $angle_elips8=\'3.1415926535897931\' $angle_elips9=\'0.39269908169872403\' $buffer=\'10mm\' $hieght=\'87.207765272494711mm\' $length_between_row=\'11mm\' $length_between_sheet=\'3.5999999999999996mm\' $mag_bredth=\'10mm\' $mag_length=\'10mm\' $mag_width=\'10mm\' $move_r=\'50mm\' $num_mag_in_ring=\'16\' $num_of_rows=\'5\' $num_of_sheets=\'15\' $position_sweetspot_touch=\'0.035355339059327376\' $position_x_touch=\'37.207765272494719mm\' $position_y_touch=\'37.207765272494719mm\' $r=\'87.207765272494711mm\' $ratio=\'1\' $ratio_mod=\'1\' $rot_angle_around_x=\'0rad\' $sweet_spot=\'40mm\' $swet_spot_length=\'30mm\' $width=\'87.207765272494711mm\''
+							MinorCacheFile='min4AB5156761727099949108.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'
