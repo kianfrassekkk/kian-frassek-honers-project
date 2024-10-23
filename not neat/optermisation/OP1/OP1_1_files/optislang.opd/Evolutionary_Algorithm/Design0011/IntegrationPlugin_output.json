@@ -1,0 +1,33 @@
+{
+    "hid" : "0.11",
+    "parameters" : 
+    [
+        {
+            "id" : "P1",
+            "name" : "$length_between_row [mm]",
+            "unit" : null,
+            "value" : 4.1421359754167497
+        },
+        {
+            "id" : "P2",
+            "name" : "$move_r [mm]",
+            "unit" : null,
+            "value" : 17.722306614741683
+        }
+    ],
+    "responses" : 
+    [
+        {
+            "id" : "P3",
+            "name" : "mean",
+            "unit" : null,
+            "value" : 0.052977933819982087
+        },
+        {
+            "id" : "P4",
+            "name" : "dif",
+            "unit" : null,
+            "value" : 0.0054112167905027049
+        }
+    ]
+}

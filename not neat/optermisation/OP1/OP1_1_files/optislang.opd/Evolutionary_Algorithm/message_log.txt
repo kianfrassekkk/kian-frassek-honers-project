@@ -1,0 +1,27 @@
+2024-Sep-27 13:02:51.106739: INFO: Initializing algorithm
+2024-Sep-27 15:11:24.893373: INFO: Initializing algorithm
+2024-Sep-27 16:18:00.344799: INFO: *** Finalize iteration: 0
+2024-Sep-27 16:18:00.344799: INFO: Append population with 20 to history
+2024-Sep-27 16:18:00.345799: INFO: FITNESS METHOD: Update strength fitness
+2024-Sep-27 16:18:00.366053: INFO: MutateStochasticEA: std: 0.1
+2024-Sep-27 16:44:59.566962: INFO: *** Finalize iteration: 1
+2024-Sep-27 16:44:59.567941: INFO: Append population with 10 to history
+2024-Sep-27 16:44:59.568946: INFO: FITNESS METHOD: Update strength fitness
+2024-Sep-27 16:44:59.628567: INFO: MutateStochasticEA: std: 0.0973684
+2024-Sep-27 17:16:32.189876: INFO: *** Finalize iteration: 2
+2024-Sep-27 17:16:32.190384: INFO: Append population with 10 to history
+2024-Sep-27 17:16:32.190384: INFO: FITNESS METHOD: Update strength fitness
+2024-Sep-27 17:16:32.196393: INFO: MutateStochasticEA: std: 0.0947368
+2024-Sep-27 19:04:33.929603: INFO: Initializing algorithm
+2024-Sep-27 19:04:33.944241: INFO: *** Finalize iteration: 0
+2024-Sep-27 19:04:33.944241: INFO: Append population with 20 to history
+2024-Sep-27 19:04:33.945249: INFO: FITNESS METHOD: Update strength fitness
+2024-Sep-27 19:04:33.949329: INFO: MutateStochasticEA: std: 0.1
+2024-Sep-27 19:04:33.957685: INFO: *** Finalize iteration: 1
+2024-Sep-27 19:04:33.957685: INFO: Append population with 10 to history
+2024-Sep-27 19:04:33.957685: INFO: FITNESS METHOD: Update strength fitness
+2024-Sep-27 19:04:33.962087: INFO: MutateStochasticEA: std: 0.0973684
+2024-Sep-27 19:04:33.971777: INFO: *** Finalize iteration: 2
+2024-Sep-27 19:04:33.973030: INFO: Append population with 10 to history
+2024-Sep-27 19:04:33.973030: INFO: FITNESS METHOD: Update strength fitness
+2024-Sep-27 19:04:33.977976: INFO: MutateStochasticEA: std: 0.0947368

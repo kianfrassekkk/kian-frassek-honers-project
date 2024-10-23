@@ -1,0 +1,51 @@
+{
+    "hid" : "0.111",
+    "parameters" : 
+    [
+        {
+            "id" : "P1",
+            "name" : "$mag_length [mm]",
+            "unit" : null,
+            "value" : 6.1200000000000001
+        },
+        {
+            "id" : "P5",
+            "name" : "$magnet_hight [mm]",
+            "unit" : null,
+            "value" : 5.1600000000000001
+        },
+        {
+            "id" : "P3",
+            "name" : "$move_r [mm]",
+            "unit" : null,
+            "value" : 38.200000000000003
+        },
+        {
+            "id" : "P4",
+            "name" : "$Disten_between_row [mm]",
+            "unit" : null,
+            "value" : 1.625
+        }
+    ],
+    "responses" : 
+    [
+        {
+            "id" : "P6",
+            "name" : "mean",
+            "unit" : null,
+            "value" : 0.0041641944457361931
+        },
+        {
+            "id" : "P7",
+            "name" : "ppmmin",
+            "unit" : null,
+            "value" : 192866.00468541661
+        },
+        {
+            "id" : "P8",
+            "name" : "ppmmax",
+            "unit" : null,
+            "value" : 202072.1869725869
+        }
+    ]
+}

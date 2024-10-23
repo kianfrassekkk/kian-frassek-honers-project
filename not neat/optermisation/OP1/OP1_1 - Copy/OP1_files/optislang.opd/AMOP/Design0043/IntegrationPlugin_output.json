@@ -1,0 +1,45 @@
+{
+    "hid" : "0.43",
+    "parameters" : 
+    [
+        {
+            "id" : "P1",
+            "name" : "$length_between_row [mm]",
+            "unit" : null,
+            "value" : 2.125
+        },
+        {
+            "id" : "P2",
+            "name" : "$move_r [mm]",
+            "unit" : null,
+            "value" : 5.25
+        }
+    ],
+    "responses" : 
+    [
+        {
+            "id" : "P3",
+            "name" : "mean",
+            "unit" : null,
+            "value" : 0.1128111176405216
+        },
+        {
+            "id" : "P4",
+            "name" : "dif",
+            "unit" : null,
+            "value" : 0.024448208495498589
+        },
+        {
+            "id" : "P5",
+            "name" : "ppmmax",
+            "unit" : null,
+            "value" : 1.2995862187793249e-06
+        },
+        {
+            "id" : "P6",
+            "name" : "diffmin",
+            "unit" : null,
+            "value" : 8.6615006449169413e-07
+        }
+    ]
+}

@@ -1,0 +1,306 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="Maxwell3DDesign1")
+Ansoft.EditSystem(System=system1)
+string1 = Ansoft.ExecuteGenericDesktopCommand(
+    System=system1,
+    CommandClass="WB_ACTIVATE_GIVEN_SYSTEMID",
+    Argument="Maxwell",
+    ExecuteOnlyIfSystemIsAlreadyOpenInDesktop=True)
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("min")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("max")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("Maximum")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("MaxPos")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("pop")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("pop")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("dif")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("/")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("mean")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("/")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("pop")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("dif")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("mean")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("*")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("undo")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").EnterScalar(1000000)')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("undo")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("pop")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("pop")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("pop")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("max")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("mean")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").EnterScalar(1000000)')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("*")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("/")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").AddNamedExpression("ppmmax", "Fields")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("min")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("mean")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("*")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("undo")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").EnterScalar(1000000)')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("*")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcOp("/")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CopyNamedExprToStack("mean")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").CalcStack("pop")')
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("V3").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").AddNamedExpression("diffmin", "Fields")')
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"V3\").SetActiveDesign(\"Maxwell3DDesign1\").GetModule(\"Optimetrics\").EditSetup(\"DefaultDesignXplorerSetup\", 
+	[
+		\"NAME:DefaultDesignXplorerSetup\",
+		\"IsEnabled:=\"		, True,
+		[
+			\"NAME:ProdOptiSetupDataV2\",
+			\"SaveFields:=\"		, False,
+			\"CopyMesh:=\"		, False,
+			\"SolveWithCopiedMeshOnly:=\", True
+		],
+		[
+			\"NAME:StartingPoint\"
+		],
+		\"Sim. Setups:=\"		, [\"solution1\"],
+		[
+			\"NAME:Sweeps\",
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$length_between_row\",
+				\"Data:=\"		, \"3.5mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_r\",
+				\"Data:=\"		, \"11.2562mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			]
+		],
+		[
+			\"NAME:Sweep Operations\"
+		],
+		\"CostFunctionName:=\"	, \"Cost\",
+		\"CostFuncNormType:=\"	, \"L2\",
+		[
+			\"NAME:CostFunctionGoals\"
+		],
+		\"EmbeddedParamSetup:=\"	, -1,
+		[
+			\"NAME:Goals\",
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"mean\",
+				\"Name:=\"		, \"mean\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"dif\",
+				\"Name:=\"		, \"dif\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmax\",
+				\"Name:=\"		, \"ppmmax\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"diffmin\",
+				\"Name:=\"		, \"diffmin\",
+				[
+					\"NAME:Ranges\"
+				]
+			]
+		]
+	])""")
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+system1.CloseAnsoftApplication()
+system2 = GetSystem(Name="Sensitivity")
+sensitivityTask1 = system2.GetContainer(ComponentName="SensitivityTask")
+string2 = sensitivityTask1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+aCTObject1 = GetDataEntity("/SensitivityTask/ACTObject:ACTObject")
+ACT.SetCustomEntityPropertyValue(
+    Entity=aCTObject1,
+    PropertyName="component_state",
+    Value=UpdateRequired)
+ACT.SetCustomEntityPropertyValue(
+    Entity=aCTObject1,
+    PropertyName="component_quick_help",
+    Value=Idle)
+Ansoft.EditSystem(System=system1)
+string3 = Ansoft.ExecuteGenericDesktopCommand(
+    System=system1,
+    CommandClass="WB_ACTIVATE_GIVEN_SYSTEMID",
+    Argument="Maxwell",
+    ExecuteOnlyIfSystemIsAlreadyOpenInDesktop=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"V3\").SetActiveDesign(\"Maxwell3DDesign1\").GetModule(\"Optimetrics\").EditSetup(\"DefaultDesignXplorerSetup\", 
+	[
+		\"NAME:DefaultDesignXplorerSetup\",
+		\"IsEnabled:=\"		, True,
+		[
+			\"NAME:ProdOptiSetupDataV2\",
+			\"SaveFields:=\"		, False,
+			\"CopyMesh:=\"		, False,
+			\"SolveWithCopiedMeshOnly:=\", True
+		],
+		[
+			\"NAME:StartingPoint\"
+		],
+		\"Sim. Setups:=\"		, [\"solution1\"],
+		[
+			\"NAME:Sweeps\",
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$length_between_row\",
+				\"Data:=\"		, \"3.5mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_r\",
+				\"Data:=\"		, \"11.2562mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			]
+		],
+		[
+			\"NAME:Sweep Operations\"
+		],
+		\"CostFunctionName:=\"	, \"Cost\",
+		\"CostFuncNormType:=\"	, \"L2\",
+		[
+			\"NAME:CostFunctionGoals\"
+		],
+		\"EmbeddedParamSetup:=\"	, -1,
+		[
+			\"NAME:Goals\",
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"mean\",
+				\"Name:=\"		, \"mean\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"dif\",
+				\"Name:=\"		, \"dif\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmax\",
+				\"Name:=\"		, \"ppmmax\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"diffmin\",
+				\"Name:=\"		, \"diffmin\",
+				[
+					\"NAME:Ranges\"
+				]
+			]
+		]
+	])""")
+system2.Delete()
+template1 = GetTemplate(TemplateName="DynSensitivityTemplate")
+system3 = template1.CreateSystem()
+system3 = GetSystem(Name="Sensitivity")
+sensitivityTask2 = system3.GetContainer(ComponentName="SensitivityTask")
+string4 = sensitivityTask2.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string5 = sensitivityTask2.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string6 = sensitivityTask2.DynSendCommand(
+    Command="LOAD",
+    Scope="WB_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynGetProjectInfo()
+string7 = sensitivityTask2.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_PARAMETER",
+    Scope="WB_NODE")
+string8 = sensitivityTask2.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_RESPONSE",
+    Scope="WB_NODE")
+string9 = sensitivityTask2.DynSendCommand(
+    Command="APPLY_WIZARD",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string10 = sensitivityTask2.DynSendCommand(
+    Command="SET_ACTOR_PROPERTIES",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynAddTask(
+    SystemReference=system3,
+    TemplateName="PPTaskTemplate",
+    Name="Results")
+sensitivityTaskComponent1 = system3.GetComponent(Name="SensitivityTask")
+pPTaskComponent1 = system3.GetComponent(Name="PPTask")
+ACT.DynSetTransferData(
+    SourceReference=sensitivityTaskComponent1,
+    TargetReference=pPTaskComponent1)
+sensitivityTaskComponent1.TransferData(TargetComponent=pPTaskComponent1)
+Save(Overwrite=True)
+sensitivityTaskComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)

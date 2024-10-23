@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Storage>
+  <Project Version="9.1">
+    <base-designpoint-name valType="String">0</base-designpoint-name>
+    <timestamp-max valType="Int64">2672</timestamp-max>
+    <framework-build-version valType="String">20.2.221.0</framework-build-version>
+    <external-version-string valType="String">2020 R2</external-version-string>
+    <last-saved-utc valType="String">09/27/2024 11:10:30</last-saved-utc>
+    <managed-categories valType="String">[report, misc, progress]</managed-categories>
+    <logHistory valType="StringArray">
+      <ArrayEntry Index="0">kianf@KIAN:C:\Users\kianf\AppData\Local\Temp\WorkbenchLogs\CoreEvents18712.log</ArrayEntry>
+      <ArrayEntry Index="1">kianf@KIAN:C:\Users\kianf\AppData\Local\Temp\WorkbenchLogs\CoreEvents4568.log</ArrayEntry>
+    </logHistory>
+    <expression-scope-container valType="String">Parameters</expression-scope-container>
+    <project-type valType="String">WB2</project-type>
+    <ReferenceCache>
+      <ProjectReferenceList>
+        <ReferenceList valType="String">{
+"ba2e3720-405d-4a44-a523-239c29a556aa": "/FileTypesContainer/FileType:project",
+"bb4ff815-d9ff-4cf2-8775-2773bcd67006": "/FileTypesContainer/FileType:ACTDatabase",
+"40726937-ad0b-48d4-8ce5-f14088e1456b": "/Schematic/Component:Maxwell3DSolution",
+"1141d527-e758-40cb-bc51-f2aa7e581070": "/Schematic/Component:Maxwell3DGeometry",
+"6a895b0f-4ab2-42b7-8a8c-97763792aefc": "/Schematic/Component:Maxwell3DSetup",
+"3707c53f-2f32-46f7-9346-1f485ed741a4": "/Schematic/Template:Maxwell3D Design",
+"8036958e-1c0e-43bc-9be1-a2ca7a95a48c": "/Schematic/Template:Fluid Flow (CFX)",
+"ac779296-bf9c-41cb-bbe2-392fb0e46e3a": "/Schematic/Template:Static Structural (ANSYS)",
+"ed99e456-036b-4d13-84ec-2796b0c061d7": "/Schematic/Template:Fluid Flow",
+"d4d769b3-1fde-4852-b272-bdfc5bb65518": "/Schematic/Template:Steady-State Thermal (ANSYS)",
+"73f80f0e-24e0-42d2-8f9a-a72238b883dc": "/Schematic/Template:Modal (ANSYS)",
+"92bc14df-b00a-4167-9d0f-dae7ecefe36d": "/Schematic/Template:Random Vibration (ANSYS)",
+"bb00fac9-b16f-454f-9cfb-95331261609a": "/Schematic/Template:Response Spectrum (ANSYS)",
+"4c457fbb-613b-4533-af97-dcd081108478": "/Schematic/ComponentTemplate:Maxwell3DGeometry",
+"37d57e80-10e6-40f2-af73-4bbd4e65c03e": "/Schematic/System:Maxwell3DDesign1",
+"2c25ba1b-dc06-409a-884b-50f40b43c17a": "/Schematic/ComponentTemplate:Maxwell3DSetup",
+"971e303f-7932-4876-b295-47f49efe0fb5": "/Schematic/ComponentTemplate:Maxwell3DSolution",
+"6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "/Parameters/Parameter:P1",
+"6babe584-a26c-40a5-9ded-660d8defa4f5": "/Parameters/Parameter:P2",
+"8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": "/Parameters/Parameter:P3",
+"57fb7412-652c-439f-b89f-c254cb894a9f": "/Parameters/Parameter:P4",
+"fac77e01-d4d4-4d71-8e51-376eddf108cf": "/Schematic/Component:SensitivityTask",
+"a397b071-8d1b-4753-967c-629a8dab3cac": "/Schematic/Component:PPTask",
+"c2f49f59-d375-4721-80ff-b7598f8fd633": "/Schematic/Template:DynSensitivityTemplate",
+"743d27b2-6a22-4947-86c9-043c057ceb3c": "/Schematic/System:Optimization",
+"700f2a0b-8ef9-4a22-8821-1313d4a8a5b4": "/Schematic/Component:OptimizationTask",
+"49de95bd-8e36-497c-bfd5-8cdf2c31e902": "/Schematic/Component:PPTask 1",
+"fd35d8cf-0513-4192-a388-4f4caf6acc48": "/Schematic/Template:DynOptimizationTemplate",
+"76665003-8a9d-4a13-93b0-68947194b706": "/Schematic/ComponentTemplate:SensitivityTaskTemplate",
+"11bf9eaf-72cd-4bb5-ace5-b754a5d1f60d": "/Schematic/System:Sensitivity",
+"3fb1260b-d8e9-41b6-8677-c0436ee3cbb3": "/Schematic/ComponentTemplate:PPTaskTemplate",
+"f5835152-25fa-4430-83de-ceffdb276b38": "/Schematic/ComponentTemplate:OptimizationTaskTemplate"
+}</ReferenceList>
+      </ProjectReferenceList>
+      <DesignPointReferenceListCollection>
+        <DesignPointReferenceList Name="0">
+          <ReferenceList valType="String">{
+"12fce5a4-7068-44b7-a5e7-118ad8fbcad5": "/Maxwell3DSetup/AnsoftDXSetupChooserEntity:AnsoftDXSetupChooserEntity",
+"ba24bb37-42f9-4aa1-abe9-61c40e91c40d": "/Maxwell3DSetup/AnsoftDXSetupEntity:AnsoftDXSetupEntityInstance",
+"4db24810-a907-48f8-a9af-766d8ebf7c2b": "/Maxwell3DGeometry/ParameterAdapter1:ParameterAdapter1",
+"80bb3c8a-f748-44a9-bc2c-77ebc86865c5": "/Maxwell3DGeometry/ParameterAdapter2:ParameterAdapter2",
+"11c1d46c-1e2d-42fb-b005-e4f75be87036": "/Maxwell3DSolution/ParameterAdapter1:ParameterAdapter1",
+"e4dcc10f-2d48-4413-acf6-3a6d480ce408": "/Maxwell3DSolution/ParameterAdapter2:ParameterAdapter2",
+"d0ba012d-ba64-47ff-812c-36b115264cae": "/SensitivityTask/DynardoTransferSensi:DynardoTransferSensi",
+"377a31d9-9a4c-4750-88ea-963ab3db725f": "/OptimizationTask/DynardoTransferOpti:DynardoTransferOpti"
+}</ReferenceList>
+        </DesignPointReferenceList>
+      </DesignPointReferenceListCollection>
+    </ReferenceCache>
+  </Project>
+  <Addins>
+    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.ProjectSchematic.ProjectSchematicAddin, Ansys.ProjectReporting.Addin, Ansys.Graphics.GraphicsAddin, Ansys.Units.Commands.Addin, Ansys.ACT.WorkBench.Addin, Ansys.Dpdb.DpdbAddin]</addin-list>
+    <Addin Name="Ansys.ParameterManager.ParameterManagerAddin" Version="7.3" />
+    <Addin Name="Ansys.ProjectSchematic.ProjectSchematicAddin" Version="11.6" />
+    <Addin Name="Ansys.ProjectReporting.Addin" Version="6.0" />
+    <Addin Name="Ansys.Graphics.GraphicsAddin" Version="1.1" />
+    <Addin Name="Ansys.Units.Commands.Addin" Version="7.1" />
+    <Addin Name="Ansys.ACT.WorkBench.Addin" Version="4.2">
+      <ExtensionsLoaded valType="StringArray">
+        <ArrayEntry Index="0">1;optiSLang 8.1.0.59702;ba012e44-4f35-4a97-aeff-8fe60efc33c9;optiSLang;wbex;8;1</ArrayEntry>
+      </ExtensionsLoaded>
+    </Addin>
+    <Addin Name="Ansys.Dpdb.DpdbAddin" Version="4.1">
+      <is-optional-on-resume valType="Boolean">true</is-optional-on-resume>
+    </Addin>
+  </Addins>
+  <Containers>
+    <container-map valType="String">{"FileContainer": Project:FileContainer, "Messages": Project:Messages, "Parameters": Ansys.ParameterManager.ParameterManagerAddin:parameters, "Schematic": Ansys.ProjectSchematic.ProjectSchematicAddin:Default, "ReportDataContainer": Ansys.ProjectReporting.Addin:ReportDataContainer, "Graphics": Ansys.Graphics.GraphicsAddin:graphics, "Units": Ansys.Units.Commands.Addin:Units, "DpdbContainer": Ansys.Dpdb.DpdbAddin:DpdbContainer}</container-map>
+    <static-container-ids valType="String">{"FileContainer": FileManager, "Parameters": Parameters, "Schematic": Schematic, "ReportDataContainer": ReportDataContainer, "Graphics": Graphics, "Units": Units, "DpdbContainer": DpdbContainer}</static-container-ids>
+    <Container Name="FileContainer" Version="1.0">
+      <container-type valType="String">Project:FileContainer</container-type>
+      <static-id valType="String">FileManager</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2664, "Input": 1501, "Output": 1501}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/FileContainer/FileReference:F1" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F1</object-name>
+        <member-data valType="String">{"DisplayText": "OP1_1.wbpj", "FileType": $$ba2e3720-405d-4a44-a523-239c29a556aa, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": "$(ProjectName).wbpj", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F2" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F2</object-name>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$bb4ff815-d9ff-4cf2-8775-2773bcd67006, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 8}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Messages" Version="1.0">
+      <container-type valType="String">Project:Messages</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2672, "Input": 1502, "Output": 1502}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Messages/StoredMessage:Message" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; DesignXplorer Analysis on DefaultDesignXplorerSetup has been started. (12:48:14 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 12:48:14, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 1" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 1</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; Verify conduction path: Conduction path validate success. (12:48:18 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 12:48:18, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 2" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 2</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Maxwell &gt; DesignXplorer Analysis failed - User aborted. (12:48:44 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 12:48:44, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 3" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 3</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Update failed for the Solution component in Maxwell3DDesign1.  Update aborted in Maxwell", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 12:48:47, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$40726937-ad0b-48d4-8ce5-f14088e1456b, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 4" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 4</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; DesignXplorer Analysis on DefaultDesignXplorerSetup has been started. (12:52:55 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 12:52:55, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 5" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 5</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; A variation ($length_between_row='1mm' $move_r='2mm') has been requested using the following machines: Local Machine. (12:52:56 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 12:52:56, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 6" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 6</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": "Maxwell &gt; Adaptive Passes did not converge based on specified criteria. (12:55:33 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 12:55:33, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 7" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 7</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; DesignXplorer Analysis is done. (12:55:37 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 12:55:37, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 8" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 8</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; DesignXplorer Analysis on DefaultDesignXplorerSetup has been started. (1:03:00 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:03:00, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "2"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 9" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 9</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; A variation ($length_between_row='2.7487569989170901mm' $move_r='4.7303563449531802mm') has been requested using the following machines: Local Machine. (1:03:01 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:03:01, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "2"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 10" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 10</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; Verify conduction path: Conduction path validate success. (1:03:04 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:03:05, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "2"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 11" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 11</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": "Maxwell &gt; Adaptive Passes did not converge based on specified criteria. (1:06:09 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:06:09, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "2"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 12" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 12</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; DesignXplorer Analysis is done. (1:06:14 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:06:14, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "2"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 13" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 13</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; A variation ($length_between_row='0.16482598730362999mm' $move_r='5.1166806463152197mm') has been requested using the following machines: Local Machine. (1:06:19 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:06:19, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "3"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 14" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 14</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; Verify conduction path: Conduction path validate success. (1:06:19 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:06:19, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "3"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 15" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 15</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; DesignXplorer Analysis is done. (1:09:30 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:09:31, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "3"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 16" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 16</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; A variation ($length_between_row='4.1653817461337903mm' $move_r='33.054582718759796mm') has been requested using the following machines: Local Machine. (1:09:35 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:09:35, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "4"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 17" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 17</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Maxwell &gt; Verify conduction path: Conduction path validate success. (1:09:35 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:09:35, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "4"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 18" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 18</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Maxwell &gt; DesignXplorer Analysis failed - User aborted. (1:10:00 pm  Sep 27, 2024)", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:10:00, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "4"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 19" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 19</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Update of the Solution component in Maxwell3DDesign1 for Design Point 4 failed: Update aborted in Maxwell", "Details": """Ansys.Core.Commands.UserReadableFailureException: Update aborted in Maxwell
+   at Ansys.Ansoft.CoreAddin.Schematic.GenericAnsoftContainerUpdateCommand.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Update aborted in Maxwell
+CommandName: Ansoft.GenericAnsoftContainerUpdate(Container=\"Maxwell3DSolution\", UpdateOptions=Set(DpUpdateType=Set(IsTopLevel=False, PartialType=\"None\", RemoteType=\"None\"), HeldLicenseId=None, LicenseStatsId=\"8a51b518f96b4d2082be36019992c7a5\", DesignPointUpdateQueue=None, MaxNumberOfCores=0))
+   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   at Ansys.Core.Commands.CommandAsyncResult.WaitForSuspendOrComplete(Int32 milliSecondsTimeout, Boolean exitContext)
+   at Ansys.ProjectSchematic.Data.ComponentTemplateEntity.Update(IFullContext context, IProgressMonitor progressMonitor, Int32 milliSecondsTimeout, DataContainerReference container, String dataGroup, UpdateOptions updateOptions, IEnumerable`1 downstream, IEnumerable`1 allRemaining)
+   at Ansys.ProjectSchematic.Update.UpdateTask.Update(IFullContext context, IProgressMonitor progressMonitor, Int32 milliSecondsTimeout, UpdateOptions updateOptions, IEnumerable`1 downstream, IEnumerable`1 allRemaining)
+   at Ansys.ProjectSchematic.Update.ComponentUpdatePlugin.updateComponent(IContextForUpdatePlugin callbacks, UpdateTask task, String trackToken, IProgressMonitor progressMonitor, Int32 milliSecondsTimeout, TaskHolder remainingTasksInThisDp, List`1 dependentTasks)
+   at Ansys.ProjectSchematic.Update.ComponentUpdatePlugin.&lt;&gt;c__DisplayClass0_0.&lt;UpdateComponent&gt;b__0()
+   at Ansys.ProjectSchematic.Update.ExecuteWithErrorBehaviour.Execute(IContextForUpdatePlugin callbacks, UpdateErrorBehavior behavior, Action op, UpdateTask forTask, Action opUponError)
+""", "Association": "", "DateTimeStamp": 09/27/2024 13:10:01, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$40726937-ad0b-48d4-8ce5-f14088e1456b, "AdditionalMessageData": None, "DesignPoint": "4"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 20" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 20</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Update aborted", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:10:02, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "4"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 21" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 21</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Update aborted", "Details": None, "Association": "", "DateTimeStamp": 09/27/2024 13:10:03, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Parameters" Version="1.0">
+      <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
+      <static-id valType="String">Parameters</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <maxUpdateOrder valType="Double">5</maxUpdateOrder>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2668, "Input": 2662, "Output": 1505}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Parameters/DesignPoint:0" Version="1.0">
+        <class-type valType="String">DesignPoint</class-type>
+        <object-name valType="String">0</object-name>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": None, "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Maxwell3DSolution in Maxwell3DDesign1"}, "Parameters": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "1", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "2"}, "ParameterErrors": {}, "CurrentValues": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "1"}, "$$6babe584-a26c-40a5-9ded-660d8defa4f5": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "2"}, "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.14726804253254311"}, "$$57fb7412-652c-439f-b89f-c254cb894a9f": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.084432710860965071"}}, "ParameterStatus": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "UpToDate", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "UpToDate", "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": "UpToDate", "$$57fb7412-652c-439f-b89f-c254cb894a9f": "UpToDate"}, "Note": None, "IsUpToDate": True, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
+        <properties-setByUserFlag-data valType="String">["IsDataModelValid"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Parameters/DesignPoint:1" Version="1.0">
+        <class-type valType="String">DesignPoint</class-type>
+        <object-name valType="String">1</object-name>
+        <member-data valType="String">{"DisplayText": "DP 1", "JustDuplicated": True, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {}, "Parameters": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "1", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "2"}, "ParameterErrors": {}, "CurrentValues": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "1"}, "$$6babe584-a26c-40a5-9ded-660d8defa4f5": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "2"}, "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.14726804253254311"}, "$$57fb7412-652c-439f-b89f-c254cb894a9f": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.084432710860965071"}}, "ParameterStatus": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "UpToDate", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "UpToDate", "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": "UpToDate", "$$57fb7412-652c-439f-b89f-c254cb894a9f": "UpToDate"}, "Note": "0.1", "IsUpToDate": False, "Exported": False, "Retained": False, "CurrentStateExported": False, "IsDataModelValid": False, "HasRetainedData": False, "HasBeenSolved": False, "UpdateOrder": 2}</member-data>
+        <properties-setByUserFlag-data valType="String">["Note", "Retained"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Parameters/DesignPoint:2" Version="1.0">
+        <class-type valType="String">DesignPoint</class-type>
+        <object-name valType="String">2</object-name>
+        <member-data valType="String">{"DisplayText": "DP 2", "JustDuplicated": False, "PartiallyRetainedData": None, "ValidRetainedData": ["Scopes", "Maxwell3DGeometry", "Maxwell3DSetup", "Maxwell3DSolution", "SensitivityTask", "PPTask", "OptimizationTask", "PPTask 1"], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Maxwell3DSolution in Maxwell3DDesign1", "DidCompleteUpdate": "True"}, "Parameters": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "2.7487569989170879", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "4.7303563449531794"}, "ParameterErrors": {}, "CurrentValues": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "2.7487569989170879"}, "$$6babe584-a26c-40a5-9ded-660d8defa4f5": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "4.7303563449531794"}, "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.11296758115219389"}, "$$57fb7412-652c-439f-b89f-c254cb894a9f": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.0233586076277276"}}, "ParameterStatus": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "UpToDate", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "UpToDate", "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": "UpToDate", "$$57fb7412-652c-439f-b89f-c254cb894a9f": "UpToDate"}, "Note": "0.2", "IsUpToDate": True, "Exported": False, "Retained": False, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": False, "HasBeenSolved": True, "UpdateOrder": 3}</member-data>
+        <properties-setByUserFlag-data valType="String">["Note", "Retained", "IsDataModelValid"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Parameters/DesignPoint:3" Version="1.0">
+        <class-type valType="String">DesignPoint</class-type>
+        <object-name valType="String">3</object-name>
+        <member-data valType="String">{"DisplayText": "DP 3", "JustDuplicated": False, "PartiallyRetainedData": None, "ValidRetainedData": ["Scopes", "Maxwell3DGeometry", "Maxwell3DSetup", "Maxwell3DSolution", "SensitivityTask", "PPTask", "OptimizationTask", "PPTask 1"], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Maxwell3DSolution in Maxwell3DDesign1", "DidCompleteUpdate": "True"}, "Parameters": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "0.16482598730362952", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "5.116680646315217"}, "ParameterErrors": {}, "CurrentValues": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.16482598730362952"}, "$$6babe584-a26c-40a5-9ded-660d8defa4f5": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "5.116680646315217"}, "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.12515884003880151"}, "$$57fb7412-652c-439f-b89f-c254cb894a9f": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.032405262365182673"}}, "ParameterStatus": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "UpToDate", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "UpToDate", "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": "UpToDate", "$$57fb7412-652c-439f-b89f-c254cb894a9f": "UpToDate"}, "Note": "0.3", "IsUpToDate": True, "Exported": False, "Retained": False, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": False, "HasBeenSolved": True, "UpdateOrder": 4}</member-data>
+        <properties-setByUserFlag-data valType="String">["Note", "Retained", "IsDataModelValid"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Parameters/DesignPoint:4" Version="1.0">
+        <class-type valType="String">DesignPoint</class-type>
+        <object-name valType="String">4</object-name>
+        <member-data valType="String">{"DisplayText": "DP 4", "JustDuplicated": False, "PartiallyRetainedData": None, "ValidRetainedData": ["Scopes", "Maxwell3DGeometry", "Maxwell3DSetup", "Maxwell3DSolution", "SensitivityTask", "PPTask", "OptimizationTask", "PPTask 1"], "ErrorsOnLastUpdate": {"$$40726937-ad0b-48d4-8ce5-f14088e1456b": "Update of the Solution component in Maxwell3DDesign1 for Design Point 4 failed: Update aborted in Maxwell"}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Maxwell3DSolution in Maxwell3DDesign1"}, "Parameters": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "4.1653817461337894", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "33.054582718759775"}, "ParameterErrors": {}, "CurrentValues": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "4.1653817461337894"}, "$$6babe584-a26c-40a5-9ded-660d8defa4f5": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "33.054582718759775"}, "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.14726804253254311"}, "$$57fb7412-652c-439f-b89f-c254cb894a9f": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.084432710860965071"}}, "ParameterStatus": {"$$6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b": "UpToDate", "$$6babe584-a26c-40a5-9ded-660d8defa4f5": "UpToDate", "$$8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e": "NeverSolvedAndFailed", "$$57fb7412-652c-439f-b89f-c254cb894a9f": "NeverSolvedAndFailed"}, "Note": "0.4", "IsUpToDate": False, "Exported": False, "Retained": False, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": False, "HasBeenSolved": False, "UpdateOrder": 5}</member-data>
+        <properties-setByUserFlag-data valType="String">["Note", "Retained", "IsDataModelValid"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Parameters/DesignPointReportSetting:Design Points Report Setting" Version="1.0">
+        <class-type valType="String">DesignPointReportSetting</class-type>
+        <object-name valType="String">Design Points Report Setting</object-name>
+        <member-data valType="String">{"DisplayText": "Design Points Report Setting", "DesignPointReportImage": "None"}</member-data>
+      </Object>
+      <Object Name="/Parameters/Parameter:P1" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P1</object-name>
+        <member-data valType="String">{"DisplayText": "$length_between_row [mm]", "PersistedNamedValueEntityReference": None, "Expression": "1", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "1"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "$length_between_row [mm]", "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308"}}</member-data>
+      </Object>
+      <Object Name="/Parameters/Parameter:P2" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P2</object-name>
+        <member-data valType="String">{"DisplayText": "$move_r [mm]", "PersistedNamedValueEntityReference": None, "Expression": "2", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "2"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "$move_r [mm]", "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308"}}</member-data>
+      </Object>
+      <Object Name="/Parameters/Parameter:P3" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P3</object-name>
+        <member-data valType="String">{"DisplayText": "mean", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.14726804253254311"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "mean", "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308"}}</member-data>
+      </Object>
+      <Object Name="/Parameters/Parameter:P4" Version="1.0">
+        <class-type valType="String">Parameter</class-type>
+        <object-name valType="String">P4</object-name>
+        <member-data valType="String">{"DisplayText": "dif", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.084432710860965071"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "dif", "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308"}}</member-data>
+      </Object>
+      <ParameterToPropertyMap>
+        <Parameter Name="/Parameters/Parameter:P1">
+          <ParameterReference valType="String">6e70d219-cd6e-4c88-9db0-2faf2a9a3f5b</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">4db24810-a907-48f8-a9af-766d8ebf7c2b</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+        <Parameter Name="/Parameters/Parameter:P2">
+          <ParameterReference valType="String">6babe584-a26c-40a5-9ded-660d8defa4f5</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">80bb3c8a-f748-44a9-bc2c-77ebc86865c5</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+        <Parameter Name="/Parameters/Parameter:P3">
+          <ParameterReference valType="String">8748c219-74b6-4eb6-9f7d-32b8c7eb1d7e</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">11c1d46c-1e2d-42fb-b005-e4f75be87036</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+        <Parameter Name="/Parameters/Parameter:P4">
+          <ParameterReference valType="String">57fb7412-652c-439f-b89f-c254cb894a9f</ParameterReference>
+          <LinkedEntityProperty>
+            <EntityReference valType="String">e4dcc10f-2d48-4413-acf6-3a6d480ce408</EntityReference>
+            <Property valType="String">Value</Property>
+          </LinkedEntityProperty>
+        </Parameter>
+      </ParameterToPropertyMap>
+    </Container>
+    <Container Name="Schematic" Version="1.0">
+      <container-type valType="String">Ansys.ProjectSchematic.ProjectSchematicAddin:Default</container-type>
+      <static-id valType="String">Schematic</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2553, "Input": 2350, "Output": 1508}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Schematic/System:Maxwell3DDesign1" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">Maxwell3DDesign1</object-name>
+        <member-data valType="String">{"DisplayText": "Maxwell3DDesign1", "Components": [$$1141d527-e758-40cb-bc51-f2aa7e581070, $$6a895b0f-4ab2-42b7-8a8c-97763792aefc, $$40726937-ad0b-48d4-8ce5-f14088e1456b], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [], "ExcludedComponentTemplates": [], "Attributes": {"VOLATILE:SystemName": "Maxwell3DDesign1"}, "SystemType": "Maxwell3D Design", "HeaderText": "Maxwell 3D", "SystemTypeAbbreviation": "Maxwell", "UniqueSystemDirectoryName": "Maxwell", "Physics": [], "AnalysisType": None, "SystemHelpId": None, "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$3707c53f-2f32-46f7-9346-1f485ed741a4, "Notes": None, "LayoutChildren": [], "LayoutIndex": 1}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:Sensitivity" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">Sensitivity</object-name>
+        <member-data valType="String">{"DisplayText": "AMOP", "Components": [$$fac77e01-d4d4-4d71-8e51-376eddf108cf, $$a397b071-8d1b-4753-967c-629a8dab3cac], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$fac77e01-d4d4-4d71-8e51-376eddf108cf], "ExcludedComponentTemplates": [], "Attributes": {}, "SystemType": "DynSensitivityTemplate", "HeaderText": "AMOP", "SystemTypeAbbreviation": "Sensitivity", "UniqueSystemDirectoryName": "Sensitivity", "Physics": [], "AnalysisType": None, "SystemHelpId": None, "AdditionalSystemHelpId": None, "IsParametric": True, "CreatedFromTemplate": $$c2f49f59-d375-4721-80ff-b7598f8fd633, "Notes": None, "LayoutChildren": [$$743d27b2-6a22-4947-86c9-043c057ceb3c], "LayoutIndex": 2}</member-data>
+        <properties-setByUserFlag-data valType="String">["HeaderText", "DisplayText"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Schematic/System:Optimization" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">Optimization</object-name>
+        <member-data valType="String">{"DisplayText": "Evolutionary Algorithm", "Components": [$$700f2a0b-8ef9-4a22-8821-1313d4a8a5b4, $$49de95bd-8e36-497c-bfd5-8cdf2c31e902], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$700f2a0b-8ef9-4a22-8821-1313d4a8a5b4], "ExcludedComponentTemplates": [], "Attributes": {}, "SystemType": "DynOptimizationTemplate", "HeaderText": "Optimization", "SystemTypeAbbreviation": "Optimization", "UniqueSystemDirectoryName": "Optimization", "Physics": [], "AnalysisType": None, "SystemHelpId": None, "AdditionalSystemHelpId": None, "IsParametric": True, "CreatedFromTemplate": $$fd35d8cf-0513-4192-a388-4f4caf6acc48, "Notes": None, "LayoutChildren": [], "LayoutIndex": 0}</member-data>
+        <properties-setByUserFlag-data valType="String">["HeaderText", "DisplayText"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Schematic/SchematicSettings:Schematic Settings" Version="1.0">
+        <class-type valType="String">SchematicSettings</class-type>
+        <object-name valType="String">Schematic Settings</object-name>
+        <member-data valType="String">{"DisplayText": "Schematic Settings", "WireBundling": False, "ShowSystemCoordinates": True, "Notes": None, "SuspendCollectingRSMResult": False}</member-data>
+      </Object>
+      <Object Name="/Schematic/DesignPointSolveSettings:Design Points Update Settings" Version="1.0">
+        <class-type valType="String">DesignPointSolveSettings</class-type>
+        <object-name valType="String">Design Points Update Settings</object-name>
+        <member-data valType="String">{"DisplayText": "Design Points Update Settings", "UpdateOption": "Foreground", "RsmUserString": None, "ConfiguredQueue": {"OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "ReadOnlyOptions": None, "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None, "Value": "Local"}, "RsmJobName": "Workbench", "UpdateMethod": "Foreground", "JobControl": "OneJobAllDesignPoints", "MaxNumberOfJobs": 1, "UpdateOrder": "UpdateFromCurrentDesignPoint", "PreRSMUpdate": "None", "AllowRemoteGeometryUpdate": False, "PartialUpdate": "None", "RetainPartialUpdate": "None", "LicenseCheckout": "OnDemand", "DelayReservedLicenseCheckout": False, "ReservedLicensingExcludesPreRsmUpdate": False, "ComponentExecutionMode": "Serial", "NumberOfCoresPerJob": 2, "KeepFailedDesignPointFiles": False, "RetainFailedDesignPoints": False, "DesignPointRetainedOrExportedUpdate": "Parameters", "DesignPointUpdateTimeout": -1, "NumberOfTasksToBeCreated": 1}</member-data>
+      </Object>
+      <Object Name="/Schematic/HeldLicenseSettings:User Reserved Licenses" Version="1.0">
+        <class-type valType="String">HeldLicenseSettings</class-type>
+        <object-name valType="String">User Reserved Licenses</object-name>
+        <member-data valType="String">{"DisplayText": "User Reserved Licenses", "ReservedSet": {}}</member-data>
+      </Object>
+      <Object Name="/Schematic/Bookkeeper:Schematic bookkeeper" Version="1.0">
+        <class-type valType="String">Bookkeeper</class-type>
+        <object-name valType="String">Schematic bookkeeper</object-name>
+        <member-data valType="String">{"DisplayText": "Schematic bookkeeper", "UpfrontLicenseCheckoutSelection": []}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:FSI: Fluid Flow (CFX) -&gt; Static Structural" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">FSI: Fluid Flow (CFX) -&gt; Static Structural</object-name>
+        <member-data valType="String">{"DisplayText": "FSI: Fluid Flow (CFX) -&gt; Static Structural", "SystemTemplates": [$$8036958e-1c0e-43bc-9be1-a2ca7a95a48c, $$ac779296-bf9c-41cb-bbe2-392fb0e46e3a], "SystemNames": ["Fluid Flow (CFX)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Fluid Flow (CFX):Geometry", "Static Structural (ANSYS):Geometry"], ["Connect", "Fluid Flow (CFX):Solution:CFXTransferResultsTemplate", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Fluid Flow (CFX)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Fluid Flow (CFX)": ["Static Structural (ANSYS)"]}}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:FSI: Fluid Flow (FLUENT) -&gt; Static Structural" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">FSI: Fluid Flow (FLUENT) -&gt; Static Structural</object-name>
+        <member-data valType="String">{"DisplayText": "FSI: Fluid Flow (FLUENT) -&gt; Static Structural", "SystemTemplates": [$$ed99e456-036b-4d13-84ec-2796b0c061d7, $$ac779296-bf9c-41cb-bbe2-392fb0e46e3a], "SystemNames": ["Fluid Flow (FLUENT)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Fluid Flow (FLUENT):Geometry", "Static Structural (ANSYS):Geometry"], ["Connect", "Fluid Flow (FLUENT):Solution", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Fluid Flow (FLUENT)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Fluid Flow (FLUENT)": ["Static Structural (ANSYS)"]}}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Thermal-Stress" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Thermal-Stress</object-name>
+        <member-data valType="String">{"DisplayText": "Thermal-Stress", "SystemTemplates": [$$d4d769b3-1fde-4852-b272-bdfc5bb65518, $$ac779296-bf9c-41cb-bbe2-392fb0e46e3a], "SystemNames": ["Steady-State Thermal (ANSYS)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Steady-State Thermal (ANSYS):Engineering Data", "Static Structural (ANSYS):Engineering Data"], ["Share", "Steady-State Thermal (ANSYS):Geometry", "Static Structural (ANSYS):Geometry"], ["Share", "Steady-State Thermal (ANSYS):Model", "Static Structural (ANSYS):Model"], ["Connect", "Steady-State Thermal (ANSYS):Solution", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Steady-State Thermal (ANSYS)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Steady-State Thermal (ANSYS)": ["Static Structural (ANSYS)"]}}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Pre-Stress Modal" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Pre-Stress Modal</object-name>
+        <member-data valType="String">{"DisplayText": "Pre-Stress Modal", "SystemTemplates": [$$ac779296-bf9c-41cb-bbe2-392fb0e46e3a, $$73f80f0e-24e0-42d2-8f9a-a72238b883dc], "SystemNames": ["Static Structural (ANSYS)", "Modal (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Static Structural (ANSYS):Engineering Data", "Modal (ANSYS):Engineering Data"], ["Share", "Static Structural (ANSYS):Geometry", "Modal (ANSYS):Geometry"], ["Share", "Static Structural (ANSYS):Model", "Modal (ANSYS):Model"], ["Connect", "Static Structural (ANSYS):Solution", "Modal (ANSYS):Setup"]], "LayoutIndices": {"Static Structural (ANSYS)": 1, "Modal (ANSYS)": 0}, "LayoutChildren": {"Static Structural (ANSYS)": ["Modal (ANSYS)"]}}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Random Vibration" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Random Vibration</object-name>
+        <member-data valType="String">{"DisplayText": "Random Vibration", "SystemTemplates": [$$73f80f0e-24e0-42d2-8f9a-a72238b883dc, $$92bc14df-b00a-4167-9d0f-dae7ecefe36d], "SystemNames": ["Modal (ANSYS)", "Random Vibration (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Modal (ANSYS):Engineering Data", "Random Vibration (ANSYS):Engineering Data"], ["Share", "Modal (ANSYS):Geometry", "Random Vibration (ANSYS):Geometry"], ["Share", "Modal (ANSYS):Model", "Random Vibration (ANSYS):Model"], ["Connect", "Modal (ANSYS):Solution", "Random Vibration (ANSYS):Setup"]], "LayoutIndices": {"Modal (ANSYS)": 1, "Random Vibration (ANSYS)": 0}, "LayoutChildren": {"Modal (ANSYS)": ["Random Vibration (ANSYS)"]}}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Response Spectrum" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Response Spectrum</object-name>
+        <member-data valType="String">{"DisplayText": "Response Spectrum", "SystemTemplates": [$$73f80f0e-24e0-42d2-8f9a-a72238b883dc, $$bb00fac9-b16f-454f-9cfb-95331261609a], "SystemNames": ["Modal (ANSYS)", "Response Spectrum (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Modal (ANSYS):Engineering Data", "Response Spectrum (ANSYS):Engineering Data"], ["Share", "Modal (ANSYS):Geometry", "Response Spectrum (ANSYS):Geometry"], ["Share", "Modal (ANSYS):Model", "Response Spectrum (ANSYS):Model"], ["Connect", "Modal (ANSYS):Solution", "Response Spectrum (ANSYS):Setup"]], "LayoutIndices": {"Modal (ANSYS)": 1, "Response Spectrum (ANSYS)": 0}, "LayoutChildren": {"Modal (ANSYS)": ["Response Spectrum (ANSYS)"]}}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Maxwell3DGeometry" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Maxwell3DGeometry</object-name>
+        <member-data valType="String">{"DisplayText": "Geometry", "ImageName": "ansoft_geometry", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Maxwell3DGeometry", "_overwrittenUpdatable": None, "Template": $$4c457fbb-613b-4533-af97-dcd081108478, "InSystem": $$37d57e80-10e6-40f2-af73-4bbd4e65c03e, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Maxwell3DSetup" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Maxwell3DSetup</object-name>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "ansoft_setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Maxwell3DSetup", "_overwrittenUpdatable": None, "Template": $$2c25ba1b-dc06-409a-884b-50f40b43c17a, "InSystem": $$37d57e80-10e6-40f2-af73-4bbd4e65c03e, "MasterSources": {"Sources": [[{"DataType": "AnsoftCellInOutEntity", "Component": $$1141d527-e758-40cb-bc51-f2aa7e581070, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Maxwell3DSolution" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Maxwell3DSolution</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "hfss_solution", "ComponentStateOnLastFailure": "Incomplete", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Maxwell3DSolution", "_overwrittenUpdatable": None, "Template": $$971e303f-7932-4876-b295-47f49efe0fb5, "InSystem": $$37d57e80-10e6-40f2-af73-4bbd4e65c03e, "MasterSources": {"Sources": [[{"DataType": "AnsoftCellInOutEntity", "Component": $$6a895b0f-4ab2-42b7-8a8c-97763792aefc, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:SensitivityTask" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">SensitivityTask</object-name>
+        <member-data valType="String">{"DisplayText": "AMOP", "ImageName": "amop", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": [], "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "SensitivityTask", "_overwrittenUpdatable": None, "Template": $$76665003-8a9d-4a13-93b0-68947194b706, "InSystem": $$11bf9eaf-72cd-4bb5-ace5-b754a5d1f60d, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <properties-setByUserFlag-data valType="String">["ImageName", "DisplayText"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Schematic/Component:PPTask" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">PPTask</object-name>
+        <member-data valType="String">{"DisplayText": "Results", "ImageName": "surface_colored", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": [], "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "PPTask", "_overwrittenUpdatable": None, "Template": $$3fb1260b-d8e9-41b6-8677-c0436ee3cbb3, "InSystem": $$11bf9eaf-72cd-4bb5-ace5-b754a5d1f60d, "MasterSources": {"Sources": [[{"DataType": "DynardoTransferSensi", "Component": $$fac77e01-d4d4-4d71-8e51-376eddf108cf, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:OptimizationTask" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">OptimizationTask</object-name>
+        <member-data valType="String">{"DisplayText": "EA", "ImageName": "evolution", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": [], "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "OptimizationTask", "_overwrittenUpdatable": None, "Template": $$f5835152-25fa-4430-83de-ceffdb276b38, "InSystem": $$743d27b2-6a22-4947-86c9-043c057ceb3c, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <properties-setByUserFlag-data valType="String">["ImageName", "DisplayText"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Schematic/Component:PPTask 1" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">PPTask 1</object-name>
+        <member-data valType="String">{"DisplayText": "Results", "ImageName": "surface_colored", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": [], "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "PPTask 1", "_overwrittenUpdatable": None, "Template": $$3fb1260b-d8e9-41b6-8677-c0436ee3cbb3, "InSystem": $$743d27b2-6a22-4947-86c9-043c057ceb3c, "MasterSources": {"Sources": [[{"DataType": "DynardoTransferOpti", "Component": $$700f2a0b-8ef9-4a22-8821-1313d4a8a5b4, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="ReportDataContainer" Version="1.0">
+      <container-type valType="String">Ansys.ProjectReporting.Addin:ReportDataContainer</container-type>
+      <static-id valType="String">ReportDataContainer</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1954, "Input": 1945, "Output": 1945}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+    </Container>
+    <Container Name="Graphics" Version="1.0">
+      <container-type valType="String">Ansys.Graphics.GraphicsAddin:graphics</container-type>
+      <static-id valType="String">Graphics</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1955, "Input": 1955, "Output": 1955}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+    </Container>
+    <Container Name="Units" Version="1.0">
+      <container-type valType="String">Ansys.Units.Commands.Addin:Units</container-type>
+      <static-id valType="String">Units</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1956, "Input": 1958, "Output": 1956}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Units/UnitSystemProjectSettings:UnitSystemProjectSettings" Version="1.0">
+        <class-type valType="String">UnitSystemProjectSettings</class-type>
+        <object-name valType="String">UnitSystemProjectSettings</object-name>
+        <member-data valType="String">{"DisplayText": "UnitSystemProjectSettings", "DataContainerUnitSystemRegistry": {}}</member-data>
+      </Object>
+      <Object Name="/Units/UnitSystem:UnitSys" Version="1.0">
+        <class-type valType="String">UnitSystem</class-type>
+        <object-name valType="String">UnitSys</object-name>
+        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
+      </Object>
+    </Container>
+    <Container Name="DpdbContainer" Version="1.0">
+      <container-type valType="String">Ansys.Dpdb.DpdbAddin:DpdbContainer</container-type>
+      <static-id valType="String">DpdbContainer</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1964, "Input": 1959, "Output": 1959}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/DpdbContainer/DpdbSettings:Dpdb Settings Entity" Version="1.0">
+        <class-type valType="String">DpdbSettings</class-type>
+        <object-name valType="String">Dpdb Settings Entity</object-name>
+        <member-data valType="String">{"DisplayText": "Dpdb Settings Entity", "ServerUrl": "https://localhost/dcs", "ServerUserName": "dcadmin", "ServerPassword": "dcadmin", "DatabaseName": None, "StartLocalEvaluatorOnUpdate": True, "ExecutionTime": 300, "UpdateDesignPointInSteps": False}</member-data>
+      </Object>
+    </Container>
+  </Containers>
+</Storage>

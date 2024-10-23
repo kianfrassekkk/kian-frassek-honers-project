@@ -1,0 +1,7 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="Optimization")
+optimizationTaskComponent1 = system1.GetComponent(Name="OptimizationTask")
+optimizationTaskComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)

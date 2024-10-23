@@ -1,0 +1,20 @@
+2024-Sep-28 10:01:20.846796: INFO: Initializing algorithm
+2024-Sep-28 15:45:46.037209: INFO:  
+2024-Sep-28 15:45:46.038240: INFO:  *** Building MOP ***
+2024-Sep-28 15:45:46.038240: INFO:  Design history: ranges Input 0 0.025 4.975
+2024-Sep-28 15:45:46.038240: INFO:  Design history: ranges Input 1 0.2 39.8
+2024-Sep-28 15:45:46.039227: INFO:  Design history: Inputs 100 2
+2024-Sep-28 15:45:46.039733: INFO:  Design history: Responses 100 2
+2024-Sep-28 15:45:46.039733: INFO:  Minimum designs per response : 100
+2024-Sep-28 15:45:46.041173: INFO:  Max. responses in parallel: 2
+2024-Sep-28 15:45:46.041173: INFO:  Response 0 num designs 100
+2024-Sep-28 15:45:46.042601: INFO:  Response 1 num designs 100
+2024-Sep-28 15:45:46.042601: INFO: Build subspaces for response o_002
+2024-Sep-28 15:45:46.043852: INFO: Build subspaces for response o_001
+2024-Sep-28 15:45:46.055464: INFO: Start metamodel evaluation for response o_001
+2024-Sep-28 15:45:46.055464: INFO: Start metamodel evaluation for response o_002
+2024-Sep-28 15:45:46.081043: INFO: Finished metamodel evaluation for response o_001 - Collecting results
+2024-Sep-28 15:45:46.607119: INFO: Finished metamodel evaluation for response o_002 - Collecting results
+2024-Sep-28 15:45:46.609636: INFO:  Active response subspace 11
+2024-Sep-28 15:45:46.610640: INFO:  CoP total 0.997577 sampleCoP 0.983523
+2024-Sep-28 15:45:46.610640: INFO:  CoP total 0.987559 sampleCoP 0.701813

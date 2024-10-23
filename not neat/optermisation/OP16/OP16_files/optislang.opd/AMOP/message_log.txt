@@ -1,0 +1,63 @@
+2024-Oct-19 11:14:28.438581: INFO: Initializing algorithm
+2024-Oct-19 13:27:49.840407: INFO: Initializing algorithm
+2024-Oct-21 00:24:29.428396: INFO: Initializing algorithm
+2024-Oct-21 08:51:38.820041: INFO:  
+2024-Oct-21 08:51:38.821038: INFO:  *** Building MOP ***
+2024-Oct-21 08:51:38.821038: INFO:  Design history: ranges Input 0 4.04 11.96
+2024-Oct-21 08:51:38.822035: INFO:  Design history: ranges Input 1 4.04 11.96
+2024-Oct-21 08:51:38.822035: INFO:  Design history: ranges Input 2 0.2 39.8
+2024-Oct-21 08:51:38.823032: INFO:  Design history: ranges Input 3 0.025 4.975
+2024-Oct-21 08:51:38.823032: INFO:  Design history: Inputs 100 4
+2024-Oct-21 08:51:38.824030: INFO:  Design history: Responses 100 3
+2024-Oct-21 08:51:38.825027: INFO:  Minimum designs per response : 82
+2024-Oct-21 08:51:38.825027: INFO:  Max. responses in parallel: 3
+2024-Oct-21 08:51:38.826025: INFO:  Response 0 num designs 82
+2024-Oct-21 08:51:38.826025: INFO:  Response 1 num designs 82
+2024-Oct-21 08:51:38.827022: INFO: Build subspaces for response o_001
+2024-Oct-21 08:51:38.827022: INFO:  Response 2 num designs 82
+2024-Oct-21 08:51:38.828019: INFO: Build subspaces for response o_002
+2024-Oct-21 08:51:38.829016: INFO: Build subspaces for response o_003
+2024-Oct-21 08:51:38.836995: INFO: Start metamodel evaluation for response o_002
+2024-Oct-21 08:51:38.840985: INFO: Start metamodel evaluation for response o_003
+2024-Oct-21 08:51:38.840985: INFO: Start metamodel evaluation for response o_001
+2024-Oct-21 08:51:39.925077: INFO: Finished metamodel evaluation for response o_002 - Collecting results
+2024-Oct-21 08:51:40.133545: INFO: Finished metamodel evaluation for response o_001 - Collecting results
+2024-Oct-21 08:51:40.231284: INFO: Finished metamodel evaluation for response o_003 - Collecting results
+2024-Oct-21 08:51:40.232282: INFO:  Active response subspace 1111
+2024-Oct-21 08:51:40.232282: INFO:  CoP total 0.923134 sampleCoP 0.488622
+2024-Oct-21 08:51:40.233279: INFO:  CoP total 0.619295 sampleCoP 0
+2024-Oct-21 08:51:40.233279: INFO:  CoP total 0.989106 sampleCoP 0.675352
+2024-Oct-21 08:51:40.403791: INFO:  
+2024-Oct-21 08:51:40.403791: INFO:  *** GlobalRefinement ***
+2024-Oct-21 08:51:40.404789: INFO:  Considering 82 previous designs
+2024-Oct-21 08:51:40.404789: INFO:  Number of new designs 100
+2024-Oct-21 20:20:31.630689: INFO:  
+2024-Oct-21 20:20:31.630689: INFO:  *** Building MOP ***
+2024-Oct-21 20:20:31.631687: INFO:  Design history: ranges Input 0 4.04 11.96
+2024-Oct-21 20:20:31.631687: INFO:  Design history: ranges Input 1 4.04 11.96
+2024-Oct-21 20:20:31.632713: INFO:  Design history: ranges Input 2 0.2 39.8
+2024-Oct-21 20:20:31.632713: INFO:  Design history: ranges Input 3 0.025 4.975
+2024-Oct-21 20:20:31.633680: INFO:  Design history: Inputs 200 4
+2024-Oct-21 20:20:31.633680: INFO:  Design history: Responses 200 3
+2024-Oct-21 20:20:31.634708: INFO:  Minimum designs per response : 162
+2024-Oct-21 20:20:31.635674: INFO:  Max. responses in parallel: 3
+2024-Oct-21 20:20:31.636672: INFO:  Response 0 num designs 162
+2024-Oct-21 20:20:31.637669: INFO:  Response 1 num designs 162
+2024-Oct-21 20:20:31.637669: INFO: Build subspaces for response o_001
+2024-Oct-21 20:20:31.638666: INFO: Build subspaces for response o_002
+2024-Oct-21 20:20:31.638666: INFO:  Response 2 num designs 162
+2024-Oct-21 20:20:31.639665: INFO: Build subspaces for response o_003
+2024-Oct-21 20:20:31.653623: INFO: Start metamodel evaluation for response o_002
+2024-Oct-21 20:20:31.659606: INFO: Start metamodel evaluation for response o_001
+2024-Oct-21 20:20:31.661601: INFO: Start metamodel evaluation for response o_003
+2024-Oct-21 20:20:31.727415: INFO: Finished metamodel evaluation for response o_003 - Collecting results
+2024-Oct-21 20:20:35.270383: INFO: Finished metamodel evaluation for response o_002 - Collecting results
+2024-Oct-21 20:20:35.622415: INFO: Finished metamodel evaluation for response o_001 - Collecting results
+2024-Oct-21 20:20:35.624407: INFO:  Active response subspace 1111
+2024-Oct-21 20:20:35.624407: INFO:  CoP total 0.923616 sampleCoP 0
+2024-Oct-21 20:20:35.625404: INFO:  CoP total 0.84793 sampleCoP 0
+2024-Oct-21 20:20:35.625404: INFO:  CoP total 0.993799 sampleCoP 0.802182
+2024-Oct-21 20:20:35.870713: INFO:  
+2024-Oct-21 20:20:35.871710: INFO:  *** GlobalRefinement ***
+2024-Oct-21 20:20:35.871710: INFO:  Considering 162 previous designs
+2024-Oct-21 20:20:35.872713: INFO:  Number of new designs 100

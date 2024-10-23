@@ -1,0 +1,612 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+fileType1 = GetFileType(Name="Ansys Electronics Desktop Project")
+ImportFile(
+    FilePath="C:/Users/kianf/OneDrive - University of Cape Town/2024_EEE4022S_Kian_Frassek_Halbach_Array/simulations/elipes closed/elipes close.aedt",
+    FileType=fileType1)
+system1 = GetSystem(Name="Maxwell3DDesign1")
+Ansoft.EditSystem(System=system1)
+string1 = Ansoft.ExecuteGenericDesktopCommand(
+    System=system1,
+    CommandClass="WB_ACTIVATE_GIVEN_SYSTEMID",
+    Argument="Maxwell",
+    ExecuteOnlyIfSystemIsAlreadyOpenInDesktop=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").GetModule(\"Optimetrics\").EditSetup(\"DefaultDesignXplorerSetup\", 
+	[
+		\"NAME:DefaultDesignXplorerSetup\",
+		\"IsEnabled:=\"		, True,
+		[
+			\"NAME:ProdOptiSetupDataV2\",
+			\"SaveFields:=\"		, False,
+			\"CopyMesh:=\"		, False,
+			\"SolveWithCopiedMeshOnly:=\", True
+		],
+		[
+			\"NAME:StartingPoint\"
+		],
+		\"Sim. Setups:=\"		, [\"Setup1\"],
+		[
+			\"NAME:Sweeps\",
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$mag_bredth\",
+				\"Data:=\"		, \"20mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$mag_width\",
+				\"Data:=\"		, \"10mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$ratio_mod\",
+				\"Data:=\"		, \"1\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$length_between_row\",
+				\"Data:=\"		, \"11mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_r\",
+				\"Data:=\"		, \"0mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			]
+		],
+		[
+			\"NAME:Sweep Operations\"
+		],
+		\"CostFunctionName:=\"	, \"Cost\",
+		\"CostFuncNormType:=\"	, \"L2\",
+		[
+			\"NAME:CostFunctionGoals\"
+		],
+		\"EmbeddedParamSetup:=\"	, -1,
+		[
+			\"NAME:Goals\",
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"mean\",
+				\"Name:=\"		, \"mean\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmath\",
+				\"Name:=\"		, \"ppmmath\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmax\",
+				\"Name:=\"		, \"ppmmax\",
+				[
+					\"NAME:Ranges\"
+				]
+			]
+		]
+	])""")
+maxwell3DSolutionComponent1 = system1.GetComponent(Name="Maxwell3DSolution")
+maxwell3DSolutionComponent1.Update(AllDependencies=True)
+Extensions.LoadExtension(
+    Id="ba012e44-4f35-4a97-aeff-8fe60efc33c9",
+    Version="8.1",
+    Format="Binary")
+Save(Overwrite=True)
+template1 = GetTemplate(TemplateName="DynSensitivityTemplate")
+system2 = template1.CreateSystem()
+system2 = GetSystem(Name="Sensitivity")
+sensitivityTask1 = system2.GetContainer(ComponentName="SensitivityTask")
+string2 = sensitivityTask1.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string3 = sensitivityTask1.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string4 = sensitivityTask1.DynSendCommand(
+    Command="LOAD",
+    Scope="WB_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynGetProjectInfo()
+string5 = sensitivityTask1.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_PARAMETER",
+    Scope="WB_NODE")
+string6 = sensitivityTask1.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_RESPONSE",
+    Scope="WB_NODE")
+string7 = sensitivityTask1.DynSendCommand(
+    Command="APPLY_WIZARD",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string8 = sensitivityTask1.DynSendCommand(
+    Command="SET_ACTOR_PROPERTIES",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynAddTask(
+    SystemReference=system2,
+    TemplateName="PPTaskTemplate",
+    Name="Results")
+sensitivityTaskComponent1 = system2.GetComponent(Name="SensitivityTask")
+pPTaskComponent1 = system2.GetComponent(Name="PPTask")
+ACT.DynSetTransferData(
+    SourceReference=sensitivityTaskComponent1,
+    TargetReference=pPTaskComponent1)
+sensitivityTaskComponent1.TransferData(TargetComponent=pPTaskComponent1)
+Save(Overwrite=True)
+sensitivityTaskComponent1.Update(AllDependencies=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$position_sweetspot_touch\",
+					\"Value:=\"		, \"(sqrt(2*sqr($sweet_spot/2))+sqrt(sqr($mag_width/2)+sqr($mag_bredth/2)))*1000\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908)))*1000\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"max($clos_radias/1000,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10)/(2+2*cos(0.39269908)))*1000\"
+				],
+				[
+					\"NAME:$position_sweetspot_touch\",
+					\"Value:=\"		, \"(sqrt(2*sqr($sweet_spot/2))+sqrt(sqr($mag_width/2)+sqr($mag_bredth/2)))\"
+				],
+				[
+					\"NAME:$position_sweetspot_touch\",
+					\"Value:=\"		, \"sqrt(2*sqr($sweet_spot/2))+sqrt(sqr($mag_width/2)+sqr($mag_bredth/2)) mm\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10)/(2+2*cos(0.39269908)))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908)))\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10)/(2+2*cos(0.39269908)))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908)))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))) mm\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"(sqrt(($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908)))*1000) mm\"
+				],
+				[
+					\"NAME:$position_sweetspot_touch\",
+					\"Value:=\"		, \"(sqrt(2*sqr($sweet_spot/2))+sqrt(sqr($mag_width/2)+sqr($mag_bredth/2))*1000) mm\"
+				]
+			]
+		]
+	])""")
+maxwell3DSolutionComponent1.Update(AllDependencies=True)
+sensitivityTaskComponent1.Clean()
+string9 = sensitivityTask1.DynSendCommand(
+    Command="RESET",
+    Scope="SYSTEM")
+ACT.DynHandleNotification(Command=IronPython.NewTypes.System.Object_1$1)
+ACT.DynHandleNotification(Command=IronPython.NewTypes.System.Object_1$1)
+designPoint1 = Parameters.GetDesignPoint(Name="1")
+designPoint1.Delete()
+designPoint2 = Parameters.GetDesignPoint(Name="2")
+designPoint2.Delete()
+designPoint3 = Parameters.GetDesignPoint(Name="3")
+designPoint3.Delete()
+designPoint4 = Parameters.GetDesignPoint(Name="4")
+designPoint4.Delete()
+aCTObject1 = GetDataEntity("/SensitivityTask/ACTObject:ACTObject")
+ACT.SetCustomEntityPropertyValue(
+    Entity=aCTObject1,
+    PropertyName="associated_dps",
+    Value=System.Collections.Generic.Dictionary`2[System.String,System.String])
+sensitivityTaskComponent1.Update(AllDependencies=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$position_sweetspot_touch\",
+					\"Value:=\"		, \"sqrt(2*sqr($sweet_spot/2))+sqrt(sqr($mag_width/2)+sqr($mag_bredth/2)) mm\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))) mm\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r) mm\"
+				],
+				[
+					\"NAME:$position_x_touch\",
+					\"Value:=\"		, \"($mag_bredth+(cos($angle1)*($mag_width+$mag_bredth)))/(2*sin($Angle_between)) mm\"
+				],
+				[
+					\"NAME:$position_y_touch\",
+					\"Value:=\"		, \"($mag_width+(cos($angle1)*($mag_width+$mag_bredth)))/(2*sin($Angle_between)) mm\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"((max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r)*1000) mm\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"((max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r)*1000000) mm\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:Geometry3DCmdTab\",
+			[
+				\"NAME:PropServers\", 
+				\"Region:CreateRegion:1\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:+X Padding Data\",
+					\"Value:=\"		, \"800\"
+				],
+				[
+					\"NAME:-X Padding Data\",
+					\"Value:=\"		, \"800\"
+				],
+				[
+					\"NAME:+Y Padding Data\",
+					\"Value:=\"		, \"800\"
+				],
+				[
+					\"NAME:-Y Padding Data\",
+					\"Value:=\"		, \"800\"
+				],
+				[
+					\"NAME:+Z Padding Data\",
+					\"Value:=\"		, \"800\"
+				],
+				[
+					\"NAME:-Z Padding Data\",
+					\"Value:=\"		, \"800\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:NewProps\",
+				[
+					\"NAME:$close_fix\",
+					\"PropType:=\"		, \"VariableProp\",
+					\"UserDef:=\"		, True,
+					\"Value:=\"		, \"$clos_radias\"
+				],
+				[
+					\"NAME:$sweet_spot_fix\",
+					\"PropType:=\"		, \"VariableProp\",
+					\"UserDef:=\"		, True,
+					\"Value:=\"		, \"$position_sweetspot_touch\"
+				]
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908)))\"
+				],
+				[
+					\"NAME:$position_x_touch\",
+					\"Value:=\"		, \"($mag_bredth+(cos($angle1)*($mag_width+$mag_bredth)))/(2*sin($Angle_between))\"
+				],
+				[
+					\"NAME:$position_y_touch\",
+					\"Value:=\"		, \"($mag_width+(cos($angle1)*($mag_width+$mag_bredth)))/(2*sin($Angle_between))\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r)*1000000\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r)\"
+				],
+				[
+					\"NAME:$position_sweetspot_touch\",
+					\"Value:=\"		, \"sqrt(2*sqr($sweet_spot/2))+sqrt(sqr($mag_width/2)+sqr($mag_bredth/2))\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r)*1\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r)\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($clos_radias,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r)\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth)/(2+2*cos(0.39269908)))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt(($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908)))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908)) mm\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"(sqrt($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))*1000) mm\"
+				],
+				[
+					\"NAME:$close_fix\",
+					\"Value:=\"		, \"$clos_radias\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))*1000\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($close_fix,max($position_y_touch,max($position_x_touch,$position_sweetspot_touch)))+$move_r)\"
+				],
+				[
+					\"NAME:$sweet_spot_fix\",
+					\"Value:=\"		, \"$position_sweetspot_touch\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($close_fix,max($position_y_touch,max($position_x_touch,$sweet_spot_fix)))+$move_r)\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqr($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt($mag_width+$mag_bredth+10mm)/(2+2*cos(0.39269908))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt($mag_width+$mag_bredth+10)/(2+2*cos(0.39269908))\"
+				],
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt($mag_width+$mag_bredth+13mm)/(2+2*cos(0.39269908))\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:NewProps\",
+				[
+					\"NAME:$thing\",
+					\"PropType:=\"		, \"VariableProp\",
+					\"UserDef:=\"		, True,
+					\"Value:=\"		, \"1/tan($angle_elips1)\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"PropType:=\"		, \"VariableProp\",
+					\"UserDef:=\"		, True,
+					\"Value:=\"		, \"($clos_radias*1000+30) mm\"
+				]
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$clos_radias\",
+					\"Value:=\"		, \"sqrt($mag_width+$mag_bredth)/(2+2*cos(0.39269908))\"
+				],
+				[
+					\"NAME:$close_fix\",
+					\"Value:=\"		, \"$clos_radias*3\"
+				],
+				[
+					\"NAME:$close_fix\",
+					\"Value:=\"		, \"$clos_radias\"
+				],
+				[
+					\"NAME:$close_fix\",
+					\"Value:=\"		, \"1\"
+				],
+				[
+					\"NAME:$close_fix\",
+					\"Value:=\"		, \"2\"
+				],
+				[
+					\"NAME:$close_fix\",
+					\"Value:=\"		, \"1\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($close_fix,max($position_y_touch,max($position_x_touch,1)))+$move_r)\"
+				],
+				[
+					\"NAME:$close_fix\",
+					\"Value:=\"		, \"$clos_radias\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"($clos_radias*1000+30) mm\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"($clos_radias*1000+30) mm\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"($clos_radias*1000+30) mm\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"($clos_radias*1000+30) mm\"
+				],
+				[
+					\"NAME:$r\",
+					\"Value:=\"		, \"(max($close_fix,max($position_y_touch,max($position_x_touch,$clos_2)))+$move_r)\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"$clos_radias mm\"
+				],
+				[
+					\"NAME:$thing\",
+					\"Value:=\"		, \"$ratio*$Angle_between\"
+				],
+				[
+					\"NAME:$thing\",
+					\"Value:=\"		, \"1/$ratio*$Angle_between\"
+				],
+				[
+					\"NAME:$thing\",
+					\"Value:=\"		, \"max(1/$ratio*$Angle_between,$ratio*$Angle_between)\"
+				],
+				[
+					\"NAME:$thing\",
+					\"Value:=\"		, \"max(1/($ratio*$Angle_between),$ratio*$Angle_between)\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"($clos_radias*1.5) mm\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"($clos_radias*2) mm\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"($clos_radias*2*1000) mm\"
+				],
+				[
+					\"NAME:$clos_2\",
+					\"Value:=\"		, \"($clos_radias+100) mm\"
+				]
+			]
+		]
+	])""")
+Save(Overwrite=True)

@@ -1,0 +1,238 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+fileType1 = GetFileType(Name="Ansys Electronics Desktop Project")
+ImportFile(
+    FilePath="C:/Users/kianf/OneDrive - University of Cape Town/2024_EEE4022S_Kian_Frassek_Halbach_Array/simulations/optrmisations neet/OP1/OP1E.aedt",
+    FileType=fileType1)
+system1 = GetSystem(Name="Maxwell3DDesign1")
+Ansoft.EditSystem(System=system1)
+string1 = Ansoft.ExecuteGenericDesktopCommand(
+    System=system1,
+    CommandClass="WB_ACTIVATE_GIVEN_SYSTEMID",
+    Argument="Maxwell",
+    ExecuteOnlyIfSystemIsAlreadyOpenInDesktop=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"OP1E\").SetActiveDesign(\"Maxwell3DDesign1\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:OptimetricsTab\",
+			[
+				\"NAME:PropServers\", 
+				\"Optimetrics:ParametricSetup4\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:Enabled\",
+					\"Value:=\"		, False
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"OP1E\").SetActiveDesign(\"Maxwell3DDesign1\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:OptimetricsTab\",
+			[
+				\"NAME:PropServers\", 
+				\"Optimetrics:ParametricSetup5\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:Enabled\",
+					\"Value:=\"		, False
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"OP1E\").SetActiveDesign(\"Maxwell3DDesign1\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:OptimetricsTab\",
+			[
+				\"NAME:PropServers\", 
+				\"Optimetrics:ParametricSetup6\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:Enabled\",
+					\"Value:=\"		, False
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"OP1E\").SetActiveDesign(\"Maxwell3DDesign1\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:OptimetricsTab\",
+			[
+				\"NAME:PropServers\", 
+				\"Optimetrics:ParametricSetup1\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:Enabled\",
+					\"Value:=\"		, False
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"OP1E\").SetActiveDesign(\"Maxwell3DDesign1\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:OptimetricsTab\",
+			[
+				\"NAME:PropServers\", 
+				\"Optimetrics:ParametricSetup2\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:Enabled\",
+					\"Value:=\"		, False
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"OP1E\").SetActiveDesign(\"Maxwell3DDesign1\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:OptimetricsTab\",
+			[
+				\"NAME:PropServers\", 
+				\"Optimetrics:ParametricSetup3\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:Enabled\",
+					\"Value:=\"		, False
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand='oDesktop.SetActiveProject("OP1E").SetActiveDesign("Maxwell3DDesign1").GetModule("FieldsReporter").DeleteFieldPlot(["B_Vector1", "B_Vector2", "Mag_B1", "Mag_B2", "B_Vector3"])')
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"OP1E\").SetActiveDesign(\"Maxwell3DDesign1\").GetModule(\"Optimetrics\").EditSetup(\"DefaultDesignXplorerSetup\", 
+	[
+		\"NAME:DefaultDesignXplorerSetup\",
+		\"IsEnabled:=\"		, True,
+		[
+			\"NAME:ProdOptiSetupDataV2\",
+			\"SaveFields:=\"		, False,
+			\"CopyMesh:=\"		, False,
+			\"SolveWithCopiedMeshOnly:=\", True
+		],
+		[
+			\"NAME:StartingPoint\"
+		],
+		\"Sim. Setups:=\"		, [\"solution1\"],
+		[
+			\"NAME:Sweeps\",
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$length_between_row\",
+				\"Data:=\"		, \"1mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_r\",
+				\"Data:=\"		, \"2mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			]
+		],
+		[
+			\"NAME:Sweep Operations\"
+		],
+		\"CostFunctionName:=\"	, \"Cost\",
+		\"CostFuncNormType:=\"	, \"L2\",
+		[
+			\"NAME:CostFunctionGoals\"
+		],
+		\"EmbeddedParamSetup:=\"	, -1,
+		[
+			\"NAME:Goals\",
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"mean\",
+				\"Name:=\"		, \"mean\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"solution1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"dif\",
+				\"Name:=\"		, \"dif\",
+				[
+					\"NAME:Ranges\"
+				]
+			]
+		]
+	])""")
+Save(Overwrite=True)
+Extensions.LoadExtension(
+    Id="ba012e44-4f35-4a97-aeff-8fe60efc33c9",
+    Version="8.1",
+    Format="Binary")
+template1 = GetTemplate(TemplateName="DynSensitivityTemplate")
+system2 = template1.CreateSystem()
+system2 = GetSystem(Name="Sensitivity")
+sensitivityTask1 = system2.GetContainer(ComponentName="SensitivityTask")
+string2 = sensitivityTask1.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string3 = sensitivityTask1.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string4 = sensitivityTask1.DynSendCommand(
+    Command="LOAD",
+    Scope="WB_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynGetProjectInfo()
+string5 = sensitivityTask1.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_PARAMETER",
+    Scope="WB_NODE")
+string6 = sensitivityTask1.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_RESPONSE",
+    Scope="WB_NODE")
+string7 = sensitivityTask1.DynSendCommand(
+    Command="APPLY_WIZARD",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string8 = sensitivityTask1.DynSendCommand(
+    Command="SET_ACTOR_PROPERTIES",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynAddTask(
+    SystemReference=system2,
+    TemplateName="PPTaskTemplate",
+    Name="Results")
+sensitivityTaskComponent1 = system2.GetComponent(Name="SensitivityTask")
+pPTaskComponent1 = system2.GetComponent(Name="PPTask")
+ACT.DynSetTransferData(
+    SourceReference=sensitivityTaskComponent1,
+    TargetReference=pPTaskComponent1)
+sensitivityTaskComponent1.TransferData(TargetComponent=pPTaskComponent1)
+Save(Overwrite=True)

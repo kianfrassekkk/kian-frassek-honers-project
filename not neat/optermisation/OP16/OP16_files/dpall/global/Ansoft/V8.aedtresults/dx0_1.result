@@ -1,0 +1,3 @@
+#NumOfInput	4
+$Disten_between_row[mm]	$mag_length[mm]	$magnet_hight[mm]	$move_r[mm]	mean	ppmmin	ppmmax	
+1.575	4.04	7.7199999999999998	20.600000000000001	0.0048557011265612706	209273.11171981061	219287.15423854819	

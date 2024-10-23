@@ -1,0 +1,30 @@
+2024-Oct-04 22:19:21.774876: INFO: Initializing algorithm
+2024-Oct-05 04:25:01.077849: INFO:  
+2024-Oct-05 04:25:01.077849: INFO:  *** Building MOP ***
+2024-Oct-05 04:25:01.079352: INFO:  Design history: ranges Input 0 0.025 4.975
+2024-Oct-05 04:25:01.079352: INFO:  Design history: ranges Input 1 0.15 29.85
+2024-Oct-05 04:25:01.079352: INFO:  Design history: Inputs 100 2
+2024-Oct-05 04:25:01.080361: INFO:  Design history: Responses 100 4
+2024-Oct-05 04:25:01.080361: INFO:  Minimum designs per response : 100
+2024-Oct-05 04:25:01.082437: INFO:  Max. responses in parallel: 4
+2024-Oct-05 04:25:01.082437: INFO:  Response 0 num designs 100
+2024-Oct-05 04:25:01.083884: INFO:  Response 1 num designs 100
+2024-Oct-05 04:25:01.083884: INFO:  Response 2 num designs 100
+2024-Oct-05 04:25:01.083884: INFO:  Response 3 num designs 100
+2024-Oct-05 04:25:01.085275: INFO: Build subspaces for response o_001
+2024-Oct-05 04:25:01.085275: INFO: Build subspaces for response o_002
+2024-Oct-05 04:25:01.086286: INFO: Build subspaces for response o_003
+2024-Oct-05 04:25:01.086286: INFO: Build subspaces for response o_004
+2024-Oct-05 04:25:01.099713: INFO: Start metamodel evaluation for response o_003
+2024-Oct-05 04:25:01.099713: INFO: Start metamodel evaluation for response o_004
+2024-Oct-05 04:25:01.101714: INFO: Start metamodel evaluation for response o_002
+2024-Oct-05 04:25:01.101714: INFO: Start metamodel evaluation for response o_001
+2024-Oct-05 04:25:01.123647: INFO: Finished metamodel evaluation for response o_003 - Collecting results
+2024-Oct-05 04:25:01.726626: INFO: Finished metamodel evaluation for response o_001 - Collecting results
+2024-Oct-05 04:25:01.744652: INFO: Finished metamodel evaluation for response o_004 - Collecting results
+2024-Oct-05 04:25:01.745656: INFO: Finished metamodel evaluation for response o_002 - Collecting results
+2024-Oct-05 04:25:01.747705: INFO:  Active response subspace 11
+2024-Oct-05 04:25:01.747705: INFO:  CoP total 0.97818 sampleCoP 0.575336
+2024-Oct-05 04:25:01.748721: INFO:  CoP total 0.931042 sampleCoP 0
+2024-Oct-05 04:25:01.748721: INFO:  CoP total 0.998215 sampleCoP 0.96361
+2024-Oct-05 04:25:01.748721: INFO:  CoP total 0.986439 sampleCoP 0.835142

@@ -1,0 +1,453 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+fileType1 = GetFileType(Name="Ansys Electronics Desktop Project")
+ImportFile(
+    FilePath="C:/Users/kianf/OneDrive - University of Cape Town/2024_EEE4022S_Kian_Frassek_Halbach_Array/simulations/elipes closed/elipes close.aedt",
+    FileType=fileType1)
+system1 = GetSystem(Name="Maxwell3DDesign1")
+Ansoft.EditSystem(System=system1)
+string1 = Ansoft.ExecuteGenericDesktopCommand(
+    System=system1,
+    CommandClass="WB_ACTIVATE_GIVEN_SYSTEMID",
+    Argument="Maxwell",
+    ExecuteOnlyIfSystemIsAlreadyOpenInDesktop=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").Delete(
+	[
+		\"NAME:Selections\",
+		\"Selections:=\"		, \"Box02,Box03,Box04,Box05,Box06,Box07,Box022,Box023,Box024,Box025,Box026,Box027,Box029,Box030,Box031,Box032,Box033,Box059,Box060,Box061,Box062,Box063,Box064,Box077,Box080,Box081,Box082,Box083,Box084,Box085,Box093,Box094,Box095,Box096,Box097,Box098\"
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").Delete(
+	[
+		\"NAME:Selections\",
+		\"Selections:=\"		, \"Box045,Box046\"
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").Delete(
+	[
+		\"NAME:Selections\",
+		\"Selections:=\"		, \"Box01,Box16,Box058,Box086,Box099\"
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").Delete(
+	[
+		\"NAME:Selections\",
+		\"Selections:=\"		, \"Box042,Box043,Box044\"
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").Delete(
+	[
+		\"NAME:Selections\",
+		\"Selections:=\"		, \"Box028\"
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").Delete(
+	[
+		\"NAME:Selections\",
+		\"Selections:=\"		, \"Box034\"
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").Delete(
+	[
+		\"NAME:Selections\",
+		\"Selections:=\"		, \"Box047\"
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").Delete(
+	[
+		\"NAME:Selections\",
+		\"Selections:=\"		, \"Box048\"
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:NewProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"PropType:=\"		, \"VariableProp\",
+					\"UserDef:=\"		, True,
+					\"Value:=\"		, \"0\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").SetWCS(
+	[
+		\"NAME:SetWCS Parameter\",
+		\"Working Coordinate System:=\", \"center\",
+		\"RegionDepCSOk:=\"	, False
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").SetActiveEditor(\"3D Modeler\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:Geometry3DCSTab\",
+			[
+				\"NAME:PropServers\", 
+				\"center\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:Origin\",
+					\"X:=\"			, \"0mm\",
+					\"Y:=\"			, \"0mm\",
+					\"Z:=\"			, \"(($num_of_rows-1)/2)*$length_between_row+$move_sweet_spot\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").GetModule(\"Optimetrics\").EditSetup(\"DefaultDesignXplorerSetup\", 
+	[
+		\"NAME:DefaultDesignXplorerSetup\",
+		\"IsEnabled:=\"		, True,
+		[
+			\"NAME:ProdOptiSetupDataV2\",
+			\"SaveFields:=\"		, False,
+			\"CopyMesh:=\"		, False,
+			\"SolveWithCopiedMeshOnly:=\", True
+		],
+		[
+			\"NAME:StartingPoint\"
+		],
+		\"Sim. Setups:=\"		, [\"Setup1\"],
+		[
+			\"NAME:Sweeps\",
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$length_between_row\",
+				\"Data:=\"		, \"11mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_r\",
+				\"Data:=\"		, \"0mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_sweet_spot\",
+				\"Data:=\"		, \"0\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			]
+		],
+		[
+			\"NAME:Sweep Operations\"
+		],
+		\"CostFunctionName:=\"	, \"Cost\",
+		\"CostFuncNormType:=\"	, \"L2\",
+		[
+			\"NAME:CostFunctionGoals\"
+		],
+		\"EmbeddedParamSetup:=\"	, -1,
+		[
+			\"NAME:Goals\"
+		]
+	])""")
+Save(Overwrite=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").GetModule(\"Optimetrics\").EditSetup(\"DefaultDesignXplorerSetup\", 
+	[
+		\"NAME:DefaultDesignXplorerSetup\",
+		\"IsEnabled:=\"		, True,
+		[
+			\"NAME:ProdOptiSetupDataV2\",
+			\"SaveFields:=\"		, False,
+			\"CopyMesh:=\"		, False,
+			\"SolveWithCopiedMeshOnly:=\", True
+		],
+		[
+			\"NAME:StartingPoint\"
+		],
+		\"Sim. Setups:=\"		, [\"Setup1\"],
+		[
+			\"NAME:Sweeps\",
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$length_between_row\",
+				\"Data:=\"		, \"11mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_r\",
+				\"Data:=\"		, \"0mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_sweet_spot\",
+				\"Data:=\"		, \"0\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			]
+		],
+		[
+			\"NAME:Sweep Operations\"
+		],
+		\"CostFunctionName:=\"	, \"Cost\",
+		\"CostFuncNormType:=\"	, \"L2\",
+		[
+			\"NAME:CostFunctionGoals\"
+		],
+		\"EmbeddedParamSetup:=\"	, -1,
+		[
+			\"NAME:Goals\",
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"mean\",
+				\"Name:=\"		, \"mean\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmath\",
+				\"Name:=\"		, \"ppmmath\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmax\",
+				\"Name:=\"		, \"ppmmax\",
+				[
+					\"NAME:Ranges\"
+				]
+			]
+		]
+	])""")
+Extensions.LoadExtension(
+    Id="ba012e44-4f35-4a97-aeff-8fe60efc33c9",
+    Version="8.1",
+    Format="Binary")
+template1 = GetTemplate(TemplateName="DynSensitivityTemplate")
+system2 = template1.CreateSystem()
+system2 = GetSystem(Name="Sensitivity")
+sensitivityTask1 = system2.GetContainer(ComponentName="SensitivityTask")
+string2 = sensitivityTask1.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string3 = sensitivityTask1.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string4 = sensitivityTask1.DynSendCommand(
+    Command="LOAD",
+    Scope="WB_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynGetProjectInfo()
+string5 = sensitivityTask1.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_PARAMETER",
+    Scope="WB_NODE")
+string6 = sensitivityTask1.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_RESPONSE",
+    Scope="WB_NODE")
+string7 = sensitivityTask1.DynSendCommand(
+    Command="APPLY_WIZARD",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string8 = sensitivityTask1.DynSendCommand(
+    Command="SET_ACTOR_PROPERTIES",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynAddTask(
+    SystemReference=system2,
+    TemplateName="PPTaskTemplate",
+    Name="Results")
+sensitivityTaskComponent1 = system2.GetComponent(Name="SensitivityTask")
+pPTaskComponent1 = system2.GetComponent(Name="PPTask")
+ACT.DynSetTransferData(
+    SourceReference=sensitivityTaskComponent1,
+    TargetReference=pPTaskComponent1)
+sensitivityTaskComponent1.TransferData(TargetComponent=pPTaskComponent1)
+Save(Overwrite=True)
+string9 = sensitivityTask1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+aCTObject1 = GetDataEntity("/SensitivityTask/ACTObject:ACTObject")
+ACT.SetCustomEntityPropertyValue(
+    Entity=aCTObject1,
+    PropertyName="component_state",
+    Value=UpdateRequired)
+ACT.SetCustomEntityPropertyValue(
+    Entity=aCTObject1,
+    PropertyName="component_quick_help",
+    Value=Idle)
+Save(Overwrite=True)
+Save(Overwrite=True)
+sensitivityTaskComponent1.Update(AllDependencies=True)
+Ansoft.EditSystem(System=system1)
+string10 = Ansoft.ExecuteGenericDesktopCommand(
+    System=system1,
+    CommandClass="WB_ACTIVATE_GIVEN_SYSTEMID",
+    Argument="Maxwell",
+    ExecuteOnlyIfSystemIsAlreadyOpenInDesktop=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"Value:=\"		, \"3\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"Value:=\"		, \"3mm\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"Value:=\"		, \"8mm\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"Value:=\"		, \"20mm\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"Value:=\"		, \"30mm\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"Value:=\"		, \"60mm\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"Value:=\"		, \"70mm\"
+				]
+			]
+		]
+	])""")
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").ChangeProperty(
+	[
+		\"NAME:AllTabs\",
+		[
+			\"NAME:ProjectVariableTab\",
+			[
+				\"NAME:PropServers\", 
+				\"ProjectVariables\"
+			],
+			[
+				\"NAME:ChangedProps\",
+				[
+					\"NAME:$move_sweet_spot\",
+					\"Value:=\"		, \"-10mm\"
+				]
+			]
+		]
+	])""")
+Save(Overwrite=True)

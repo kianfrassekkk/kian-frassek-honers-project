@@ -1,0 +1,128 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="Maxwell3DDesign1")
+Ansoft.EditSystem(System=system1)
+string1 = Ansoft.ExecuteGenericDesktopCommand(
+    System=system1,
+    CommandClass="WB_ACTIVATE_GIVEN_SYSTEMID",
+    Argument="Maxwell",
+    ExecuteOnlyIfSystemIsAlreadyOpenInDesktop=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").GetModule(\"Optimetrics\").EditSetup(\"DefaultDesignXplorerSetup\", 
+	[
+		\"NAME:DefaultDesignXplorerSetup\",
+		\"IsEnabled:=\"		, True,
+		[
+			\"NAME:ProdOptiSetupDataV2\",
+			\"SaveFields:=\"		, False,
+			\"CopyMesh:=\"		, False,
+			\"SolveWithCopiedMeshOnly:=\", True
+		],
+		[
+			\"NAME:StartingPoint\"
+		],
+		\"Sim. Setups:=\"		, [\"Setup1\"],
+		[
+			\"NAME:Sweeps\",
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$mag_bredth\",
+				\"Data:=\"		, \"10mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$mag_width\",
+				\"Data:=\"		, \"10mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$ratio_mod\",
+				\"Data:=\"		, \"1\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$length_between_row\",
+				\"Data:=\"		, \"11mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_r\",
+				\"Data:=\"		, \"0mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_sweet_spot\",
+				\"Data:=\"		, \"0\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			]
+		],
+		[
+			\"NAME:Sweep Operations\"
+		],
+		\"CostFunctionName:=\"	, \"Cost\",
+		\"CostFuncNormType:=\"	, \"L2\",
+		[
+			\"NAME:CostFunctionGoals\"
+		],
+		\"EmbeddedParamSetup:=\"	, -1,
+		[
+			\"NAME:Goals\",
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"mean\",
+				\"Name:=\"		, \"mean\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmath\",
+				\"Name:=\"		, \"ppmmath\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmax\",
+				\"Name:=\"		, \"ppmmax\",
+				[
+					\"NAME:Ranges\"
+				]
+			]
+		]
+	])""")
+Save(Overwrite=True)
+system2 = GetSystem(Name="Sensitivity")
+sensitivityTask1 = system2.GetContainer(ComponentName="SensitivityTask")
+string2 = sensitivityTask1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)

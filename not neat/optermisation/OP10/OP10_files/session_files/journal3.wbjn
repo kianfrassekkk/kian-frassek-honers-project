@@ -1,0 +1,611 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="Maxwell3DDesign1")
+Ansoft.EditSystem(System=system1)
+string1 = Ansoft.ExecuteGenericDesktopCommand(
+    System=system1,
+    CommandClass="WB_ACTIVATE_GIVEN_SYSTEMID",
+    Argument="Maxwell",
+    ExecuteOnlyIfSystemIsAlreadyOpenInDesktop=True)
+system1.SendAnsoftCommand(PyCommand="""oDesktop.SetActiveProject(\"elipes close\").SetActiveDesign(\"Maxwell3DDesign1\").GetModule(\"Optimetrics\").EditSetup(\"DefaultDesignXplorerSetup\", 
+	[
+		\"NAME:DefaultDesignXplorerSetup\",
+		\"IsEnabled:=\"		, True,
+		[
+			\"NAME:ProdOptiSetupDataV2\",
+			\"SaveFields:=\"		, False,
+			\"CopyMesh:=\"		, False,
+			\"SolveWithCopiedMeshOnly:=\", True
+		],
+		[
+			\"NAME:StartingPoint\"
+		],
+		\"Sim. Setups:=\"		, [\"Setup1\"],
+		[
+			\"NAME:Sweeps\",
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$mag_bredth\",
+				\"Data:=\"		, \"10mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$mag_width\",
+				\"Data:=\"		, \"10mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$ratio_mod\",
+				\"Data:=\"		, \"1\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$length_between_row\",
+				\"Data:=\"		, \"11mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_r\",
+				\"Data:=\"		, \"0mm\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			],
+			[
+				\"NAME:SweepDefinition\",
+				\"Variable:=\"		, \"$move_sweet_spot\",
+				\"Data:=\"		, \"0\",
+				\"OffsetF1:=\"		, False,
+				\"Synchronize:=\"		, 0
+			]
+		],
+		[
+			\"NAME:Sweep Operations\"
+		],
+		\"CostFunctionName:=\"	, \"Cost\",
+		\"CostFuncNormType:=\"	, \"L2\",
+		[
+			\"NAME:CostFunctionGoals\"
+		],
+		\"EmbeddedParamSetup:=\"	, -1,
+		[
+			\"NAME:Goals\",
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"mean\",
+				\"Name:=\"		, \"mean\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmath\",
+				\"Name:=\"		, \"ppmmath\",
+				[
+					\"NAME:Ranges\"
+				]
+			],
+			[
+				\"NAME:Goal\",
+				\"ReportType:=\"		, \"Fields\",
+				\"Solution:=\"		, \"Setup1 : LastAdaptive\",
+				[
+					\"NAME:SimValueContext\"
+				],
+				\"Calculation:=\"		, \"ppmmax\",
+				\"Name:=\"		, \"ppmmax\",
+				[
+					\"NAME:Ranges\"
+				]
+			]
+		]
+	])""")
+Save(Overwrite=True)
+system2 = GetSystem(Name="Sensitivity")
+sensitivityTask1 = system2.GetContainer(ComponentName="SensitivityTask")
+string2 = sensitivityTask1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string3 = sensitivityTask1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string4 = sensitivityTask1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string5 = sensitivityTask1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+aCTObject1 = GetDataEntity("/SensitivityTask/ACTObject:ACTObject")
+ACT.SetCustomEntityPropertyValue(
+    Entity=aCTObject1,
+    PropertyName="component_state",
+    Value=UpdateRequired)
+ACT.SetCustomEntityPropertyValue(
+    Entity=aCTObject1,
+    PropertyName="component_quick_help",
+    Value=Processing aborted)
+CleanSystem(Systems=[system2])
+string6 = sensitivityTask1.DynSendCommand(
+    Command="RESET",
+    Scope="SYSTEM")
+ACT.DynHandleNotification(Command=IronPython.NewTypes.System.Object_1$1)
+ACT.DynHandleNotification(Command=IronPython.NewTypes.System.Object_1$1)
+designPoint1 = Parameters.GetDesignPoint(Name="1")
+designPoint1.Delete()
+designPoint2 = Parameters.GetDesignPoint(Name="2")
+designPoint2.Delete()
+designPoint3 = Parameters.GetDesignPoint(Name="3")
+designPoint3.Delete()
+designPoint4 = Parameters.GetDesignPoint(Name="4")
+designPoint4.Delete()
+designPoint5 = Parameters.GetDesignPoint(Name="5")
+designPoint5.Delete()
+designPoint6 = Parameters.GetDesignPoint(Name="6")
+designPoint6.Delete()
+designPoint7 = Parameters.GetDesignPoint(Name="7")
+designPoint7.Delete()
+designPoint8 = Parameters.GetDesignPoint(Name="8")
+designPoint8.Delete()
+designPoint9 = Parameters.GetDesignPoint(Name="9")
+designPoint9.Delete()
+designPoint10 = Parameters.GetDesignPoint(Name="10")
+designPoint10.Delete()
+designPoint11 = Parameters.GetDesignPoint(Name="11")
+designPoint11.Delete()
+designPoint12 = Parameters.GetDesignPoint(Name="12")
+designPoint12.Delete()
+designPoint13 = Parameters.GetDesignPoint(Name="13")
+designPoint13.Delete()
+designPoint14 = Parameters.GetDesignPoint(Name="14")
+designPoint14.Delete()
+designPoint15 = Parameters.GetDesignPoint(Name="15")
+designPoint15.Delete()
+designPoint16 = Parameters.GetDesignPoint(Name="16")
+designPoint16.Delete()
+designPoint17 = Parameters.GetDesignPoint(Name="17")
+designPoint17.Delete()
+designPoint18 = Parameters.GetDesignPoint(Name="18")
+designPoint18.Delete()
+designPoint19 = Parameters.GetDesignPoint(Name="19")
+designPoint19.Delete()
+designPoint20 = Parameters.GetDesignPoint(Name="20")
+designPoint20.Delete()
+designPoint21 = Parameters.GetDesignPoint(Name="21")
+designPoint21.Delete()
+designPoint22 = Parameters.GetDesignPoint(Name="22")
+designPoint22.Delete()
+designPoint23 = Parameters.GetDesignPoint(Name="23")
+designPoint23.Delete()
+designPoint24 = Parameters.GetDesignPoint(Name="24")
+designPoint24.Delete()
+designPoint25 = Parameters.GetDesignPoint(Name="25")
+designPoint25.Delete()
+designPoint26 = Parameters.GetDesignPoint(Name="26")
+designPoint26.Delete()
+designPoint27 = Parameters.GetDesignPoint(Name="27")
+designPoint27.Delete()
+designPoint28 = Parameters.GetDesignPoint(Name="28")
+designPoint28.Delete()
+designPoint29 = Parameters.GetDesignPoint(Name="29")
+designPoint29.Delete()
+designPoint30 = Parameters.GetDesignPoint(Name="30")
+designPoint30.Delete()
+designPoint31 = Parameters.GetDesignPoint(Name="31")
+designPoint31.Delete()
+designPoint32 = Parameters.GetDesignPoint(Name="32")
+designPoint32.Delete()
+designPoint33 = Parameters.GetDesignPoint(Name="33")
+designPoint33.Delete()
+designPoint34 = Parameters.GetDesignPoint(Name="34")
+designPoint34.Delete()
+designPoint35 = Parameters.GetDesignPoint(Name="35")
+designPoint35.Delete()
+designPoint36 = Parameters.GetDesignPoint(Name="36")
+designPoint36.Delete()
+designPoint37 = Parameters.GetDesignPoint(Name="37")
+designPoint37.Delete()
+designPoint38 = Parameters.GetDesignPoint(Name="38")
+designPoint38.Delete()
+designPoint39 = Parameters.GetDesignPoint(Name="39")
+designPoint39.Delete()
+designPoint40 = Parameters.GetDesignPoint(Name="40")
+designPoint40.Delete()
+designPoint41 = Parameters.GetDesignPoint(Name="41")
+designPoint41.Delete()
+designPoint42 = Parameters.GetDesignPoint(Name="42")
+designPoint42.Delete()
+designPoint43 = Parameters.GetDesignPoint(Name="43")
+designPoint43.Delete()
+designPoint44 = Parameters.GetDesignPoint(Name="44")
+designPoint44.Delete()
+designPoint45 = Parameters.GetDesignPoint(Name="45")
+designPoint45.Delete()
+designPoint46 = Parameters.GetDesignPoint(Name="46")
+designPoint46.Delete()
+designPoint47 = Parameters.GetDesignPoint(Name="47")
+designPoint47.Delete()
+designPoint48 = Parameters.GetDesignPoint(Name="48")
+designPoint48.Delete()
+designPoint49 = Parameters.GetDesignPoint(Name="49")
+designPoint49.Delete()
+designPoint50 = Parameters.GetDesignPoint(Name="50")
+designPoint50.Delete()
+designPoint51 = Parameters.GetDesignPoint(Name="51")
+designPoint51.Delete()
+designPoint52 = Parameters.GetDesignPoint(Name="52")
+designPoint52.Delete()
+designPoint53 = Parameters.GetDesignPoint(Name="53")
+designPoint53.Delete()
+designPoint54 = Parameters.GetDesignPoint(Name="54")
+designPoint54.Delete()
+designPoint55 = Parameters.GetDesignPoint(Name="55")
+designPoint55.Delete()
+designPoint56 = Parameters.GetDesignPoint(Name="56")
+designPoint56.Delete()
+designPoint57 = Parameters.GetDesignPoint(Name="57")
+designPoint57.Delete()
+designPoint58 = Parameters.GetDesignPoint(Name="58")
+designPoint58.Delete()
+designPoint59 = Parameters.GetDesignPoint(Name="59")
+designPoint59.Delete()
+designPoint60 = Parameters.GetDesignPoint(Name="60")
+designPoint60.Delete()
+designPoint61 = Parameters.GetDesignPoint(Name="61")
+designPoint61.Delete()
+designPoint62 = Parameters.GetDesignPoint(Name="62")
+designPoint62.Delete()
+designPoint63 = Parameters.GetDesignPoint(Name="63")
+designPoint63.Delete()
+designPoint64 = Parameters.GetDesignPoint(Name="64")
+designPoint64.Delete()
+designPoint65 = Parameters.GetDesignPoint(Name="65")
+designPoint65.Delete()
+designPoint66 = Parameters.GetDesignPoint(Name="66")
+designPoint66.Delete()
+designPoint67 = Parameters.GetDesignPoint(Name="67")
+designPoint67.Delete()
+designPoint68 = Parameters.GetDesignPoint(Name="68")
+designPoint68.Delete()
+designPoint69 = Parameters.GetDesignPoint(Name="69")
+designPoint69.Delete()
+designPoint70 = Parameters.GetDesignPoint(Name="70")
+designPoint70.Delete()
+designPoint71 = Parameters.GetDesignPoint(Name="71")
+designPoint71.Delete()
+designPoint72 = Parameters.GetDesignPoint(Name="72")
+designPoint72.Delete()
+designPoint73 = Parameters.GetDesignPoint(Name="73")
+designPoint73.Delete()
+designPoint74 = Parameters.GetDesignPoint(Name="74")
+designPoint74.Delete()
+designPoint75 = Parameters.GetDesignPoint(Name="75")
+designPoint75.Delete()
+designPoint76 = Parameters.GetDesignPoint(Name="76")
+designPoint76.Delete()
+designPoint77 = Parameters.GetDesignPoint(Name="77")
+designPoint77.Delete()
+designPoint78 = Parameters.GetDesignPoint(Name="78")
+designPoint78.Delete()
+designPoint79 = Parameters.GetDesignPoint(Name="79")
+designPoint79.Delete()
+designPoint80 = Parameters.GetDesignPoint(Name="80")
+designPoint80.Delete()
+designPoint81 = Parameters.GetDesignPoint(Name="81")
+designPoint81.Delete()
+designPoint82 = Parameters.GetDesignPoint(Name="82")
+designPoint82.Delete()
+designPoint83 = Parameters.GetDesignPoint(Name="83")
+designPoint83.Delete()
+designPoint84 = Parameters.GetDesignPoint(Name="84")
+designPoint84.Delete()
+designPoint85 = Parameters.GetDesignPoint(Name="85")
+designPoint85.Delete()
+designPoint86 = Parameters.GetDesignPoint(Name="86")
+designPoint86.Delete()
+designPoint87 = Parameters.GetDesignPoint(Name="87")
+designPoint87.Delete()
+designPoint88 = Parameters.GetDesignPoint(Name="88")
+designPoint88.Delete()
+designPoint89 = Parameters.GetDesignPoint(Name="89")
+designPoint89.Delete()
+designPoint90 = Parameters.GetDesignPoint(Name="90")
+designPoint90.Delete()
+designPoint91 = Parameters.GetDesignPoint(Name="91")
+designPoint91.Delete()
+designPoint92 = Parameters.GetDesignPoint(Name="92")
+designPoint92.Delete()
+designPoint93 = Parameters.GetDesignPoint(Name="93")
+designPoint93.Delete()
+designPoint94 = Parameters.GetDesignPoint(Name="94")
+designPoint94.Delete()
+designPoint95 = Parameters.GetDesignPoint(Name="95")
+designPoint95.Delete()
+designPoint96 = Parameters.GetDesignPoint(Name="96")
+designPoint96.Delete()
+designPoint97 = Parameters.GetDesignPoint(Name="97")
+designPoint97.Delete()
+designPoint98 = Parameters.GetDesignPoint(Name="98")
+designPoint98.Delete()
+designPoint99 = Parameters.GetDesignPoint(Name="99")
+designPoint99.Delete()
+designPoint100 = Parameters.GetDesignPoint(Name="100")
+designPoint100.Delete()
+designPoint101 = Parameters.GetDesignPoint(Name="101")
+designPoint101.Delete()
+designPoint102 = Parameters.GetDesignPoint(Name="102")
+designPoint102.Delete()
+designPoint103 = Parameters.GetDesignPoint(Name="103")
+designPoint103.Delete()
+designPoint104 = Parameters.GetDesignPoint(Name="104")
+designPoint104.Delete()
+designPoint105 = Parameters.GetDesignPoint(Name="105")
+designPoint105.Delete()
+designPoint106 = Parameters.GetDesignPoint(Name="106")
+designPoint106.Delete()
+designPoint107 = Parameters.GetDesignPoint(Name="107")
+designPoint107.Delete()
+designPoint108 = Parameters.GetDesignPoint(Name="108")
+designPoint108.Delete()
+designPoint109 = Parameters.GetDesignPoint(Name="109")
+designPoint109.Delete()
+designPoint110 = Parameters.GetDesignPoint(Name="110")
+designPoint110.Delete()
+designPoint111 = Parameters.GetDesignPoint(Name="111")
+designPoint111.Delete()
+designPoint112 = Parameters.GetDesignPoint(Name="112")
+designPoint112.Delete()
+designPoint113 = Parameters.GetDesignPoint(Name="113")
+designPoint113.Delete()
+designPoint114 = Parameters.GetDesignPoint(Name="114")
+designPoint114.Delete()
+designPoint115 = Parameters.GetDesignPoint(Name="115")
+designPoint115.Delete()
+designPoint116 = Parameters.GetDesignPoint(Name="116")
+designPoint116.Delete()
+designPoint117 = Parameters.GetDesignPoint(Name="117")
+designPoint117.Delete()
+designPoint118 = Parameters.GetDesignPoint(Name="118")
+designPoint118.Delete()
+designPoint119 = Parameters.GetDesignPoint(Name="119")
+designPoint119.Delete()
+designPoint120 = Parameters.GetDesignPoint(Name="120")
+designPoint120.Delete()
+designPoint121 = Parameters.GetDesignPoint(Name="121")
+designPoint121.Delete()
+designPoint122 = Parameters.GetDesignPoint(Name="122")
+designPoint122.Delete()
+designPoint123 = Parameters.GetDesignPoint(Name="123")
+designPoint123.Delete()
+designPoint124 = Parameters.GetDesignPoint(Name="124")
+designPoint124.Delete()
+designPoint125 = Parameters.GetDesignPoint(Name="125")
+designPoint125.Delete()
+designPoint126 = Parameters.GetDesignPoint(Name="126")
+designPoint126.Delete()
+designPoint127 = Parameters.GetDesignPoint(Name="127")
+designPoint127.Delete()
+designPoint128 = Parameters.GetDesignPoint(Name="128")
+designPoint128.Delete()
+designPoint129 = Parameters.GetDesignPoint(Name="129")
+designPoint129.Delete()
+designPoint130 = Parameters.GetDesignPoint(Name="130")
+designPoint130.Delete()
+designPoint131 = Parameters.GetDesignPoint(Name="131")
+designPoint131.Delete()
+designPoint132 = Parameters.GetDesignPoint(Name="132")
+designPoint132.Delete()
+designPoint133 = Parameters.GetDesignPoint(Name="133")
+designPoint133.Delete()
+designPoint134 = Parameters.GetDesignPoint(Name="134")
+designPoint134.Delete()
+designPoint135 = Parameters.GetDesignPoint(Name="135")
+designPoint135.Delete()
+designPoint136 = Parameters.GetDesignPoint(Name="136")
+designPoint136.Delete()
+designPoint137 = Parameters.GetDesignPoint(Name="137")
+designPoint137.Delete()
+designPoint138 = Parameters.GetDesignPoint(Name="138")
+designPoint138.Delete()
+designPoint139 = Parameters.GetDesignPoint(Name="139")
+designPoint139.Delete()
+designPoint140 = Parameters.GetDesignPoint(Name="140")
+designPoint140.Delete()
+designPoint141 = Parameters.GetDesignPoint(Name="141")
+designPoint141.Delete()
+designPoint142 = Parameters.GetDesignPoint(Name="142")
+designPoint142.Delete()
+designPoint143 = Parameters.GetDesignPoint(Name="143")
+designPoint143.Delete()
+designPoint144 = Parameters.GetDesignPoint(Name="144")
+designPoint144.Delete()
+designPoint145 = Parameters.GetDesignPoint(Name="145")
+designPoint145.Delete()
+designPoint146 = Parameters.GetDesignPoint(Name="146")
+designPoint146.Delete()
+designPoint147 = Parameters.GetDesignPoint(Name="147")
+designPoint147.Delete()
+designPoint148 = Parameters.GetDesignPoint(Name="148")
+designPoint148.Delete()
+designPoint149 = Parameters.GetDesignPoint(Name="149")
+designPoint149.Delete()
+designPoint150 = Parameters.GetDesignPoint(Name="150")
+designPoint150.Delete()
+designPoint151 = Parameters.GetDesignPoint(Name="151")
+designPoint151.Delete()
+designPoint152 = Parameters.GetDesignPoint(Name="152")
+designPoint152.Delete()
+designPoint153 = Parameters.GetDesignPoint(Name="153")
+designPoint153.Delete()
+designPoint154 = Parameters.GetDesignPoint(Name="154")
+designPoint154.Delete()
+designPoint155 = Parameters.GetDesignPoint(Name="155")
+designPoint155.Delete()
+designPoint156 = Parameters.GetDesignPoint(Name="156")
+designPoint156.Delete()
+designPoint157 = Parameters.GetDesignPoint(Name="157")
+designPoint157.Delete()
+designPoint158 = Parameters.GetDesignPoint(Name="158")
+designPoint158.Delete()
+designPoint159 = Parameters.GetDesignPoint(Name="159")
+designPoint159.Delete()
+designPoint160 = Parameters.GetDesignPoint(Name="160")
+designPoint160.Delete()
+designPoint161 = Parameters.GetDesignPoint(Name="161")
+designPoint161.Delete()
+designPoint162 = Parameters.GetDesignPoint(Name="162")
+designPoint162.Delete()
+designPoint163 = Parameters.GetDesignPoint(Name="163")
+designPoint163.Delete()
+designPoint164 = Parameters.GetDesignPoint(Name="164")
+designPoint164.Delete()
+designPoint165 = Parameters.GetDesignPoint(Name="165")
+designPoint165.Delete()
+designPoint166 = Parameters.GetDesignPoint(Name="166")
+designPoint166.Delete()
+designPoint167 = Parameters.GetDesignPoint(Name="167")
+designPoint167.Delete()
+designPoint168 = Parameters.GetDesignPoint(Name="168")
+designPoint168.Delete()
+designPoint169 = Parameters.GetDesignPoint(Name="169")
+designPoint169.Delete()
+designPoint170 = Parameters.GetDesignPoint(Name="170")
+designPoint170.Delete()
+designPoint171 = Parameters.GetDesignPoint(Name="171")
+designPoint171.Delete()
+designPoint172 = Parameters.GetDesignPoint(Name="172")
+designPoint172.Delete()
+designPoint173 = Parameters.GetDesignPoint(Name="173")
+designPoint173.Delete()
+designPoint174 = Parameters.GetDesignPoint(Name="174")
+designPoint174.Delete()
+designPoint175 = Parameters.GetDesignPoint(Name="175")
+designPoint175.Delete()
+designPoint176 = Parameters.GetDesignPoint(Name="176")
+designPoint176.Delete()
+designPoint177 = Parameters.GetDesignPoint(Name="177")
+designPoint177.Delete()
+designPoint178 = Parameters.GetDesignPoint(Name="178")
+designPoint178.Delete()
+designPoint179 = Parameters.GetDesignPoint(Name="179")
+designPoint179.Delete()
+designPoint180 = Parameters.GetDesignPoint(Name="180")
+designPoint180.Delete()
+designPoint181 = Parameters.GetDesignPoint(Name="181")
+designPoint181.Delete()
+designPoint182 = Parameters.GetDesignPoint(Name="182")
+designPoint182.Delete()
+designPoint183 = Parameters.GetDesignPoint(Name="183")
+designPoint183.Delete()
+designPoint184 = Parameters.GetDesignPoint(Name="184")
+designPoint184.Delete()
+designPoint185 = Parameters.GetDesignPoint(Name="185")
+designPoint185.Delete()
+designPoint186 = Parameters.GetDesignPoint(Name="186")
+designPoint186.Delete()
+designPoint187 = Parameters.GetDesignPoint(Name="187")
+designPoint187.Delete()
+designPoint188 = Parameters.GetDesignPoint(Name="188")
+designPoint188.Delete()
+designPoint189 = Parameters.GetDesignPoint(Name="189")
+designPoint189.Delete()
+designPoint190 = Parameters.GetDesignPoint(Name="190")
+designPoint190.Delete()
+designPoint191 = Parameters.GetDesignPoint(Name="191")
+designPoint191.Delete()
+designPoint192 = Parameters.GetDesignPoint(Name="192")
+designPoint192.Delete()
+designPoint193 = Parameters.GetDesignPoint(Name="193")
+designPoint193.Delete()
+designPoint194 = Parameters.GetDesignPoint(Name="194")
+designPoint194.Delete()
+designPoint195 = Parameters.GetDesignPoint(Name="195")
+designPoint195.Delete()
+designPoint196 = Parameters.GetDesignPoint(Name="196")
+designPoint196.Delete()
+designPoint197 = Parameters.GetDesignPoint(Name="197")
+designPoint197.Delete()
+designPoint198 = Parameters.GetDesignPoint(Name="198")
+designPoint198.Delete()
+designPoint199 = Parameters.GetDesignPoint(Name="199")
+designPoint199.Delete()
+designPoint200 = Parameters.GetDesignPoint(Name="200")
+designPoint200.Delete()
+designPoint201 = Parameters.GetDesignPoint(Name="201")
+designPoint201.Delete()
+designPoint202 = Parameters.GetDesignPoint(Name="202")
+designPoint202.Delete()
+designPoint203 = Parameters.GetDesignPoint(Name="203")
+designPoint203.Delete()
+designPoint204 = Parameters.GetDesignPoint(Name="204")
+designPoint204.Delete()
+designPoint205 = Parameters.GetDesignPoint(Name="205")
+designPoint205.Delete()
+designPoint206 = Parameters.GetDesignPoint(Name="206")
+designPoint206.Delete()
+ACT.SetCustomEntityPropertyValue(
+    Entity=aCTObject1,
+    PropertyName="associated_dps",
+    Value=System.Collections.Generic.Dictionary`2[System.String,System.String])
+system2.Delete()
+template1 = GetTemplate(TemplateName="DynSensitivityTemplate")
+system3 = template1.CreateSystem()
+system3 = GetSystem(Name="Sensitivity")
+sensitivityTask2 = system3.GetContainer(ComponentName="SensitivityTask")
+string7 = sensitivityTask2.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string8 = sensitivityTask2.DynSendCommand(
+    Command="CREATE_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string9 = sensitivityTask2.DynSendCommand(
+    Command="LOAD",
+    Scope="WB_NODE",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynGetProjectInfo()
+string10 = sensitivityTask2.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_PARAMETER",
+    Scope="WB_NODE")
+string11 = sensitivityTask2.DynSendCommand(
+    Command="REGISTER_LOCATIONS_AS_RESPONSE",
+    Scope="WB_NODE")
+string12 = sensitivityTask2.DynSendCommand(
+    Command="APPLY_WIZARD",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+string13 = sensitivityTask2.DynSendCommand(
+    Command="SET_ACTOR_PROPERTIES",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+ACT.DynAddTask(
+    SystemReference=system3,
+    TemplateName="PPTaskTemplate",
+    Name="Results")
+sensitivityTaskComponent1 = system3.GetComponent(Name="SensitivityTask")
+pPTaskComponent1 = system3.GetComponent(Name="PPTask")
+ACT.DynSetTransferData(
+    SourceReference=sensitivityTaskComponent1,
+    TargetReference=pPTaskComponent1)
+sensitivityTaskComponent1.TransferData(TargetComponent=pPTaskComponent1)

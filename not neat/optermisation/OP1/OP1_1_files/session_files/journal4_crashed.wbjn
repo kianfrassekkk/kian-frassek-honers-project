@@ -1,0 +1,13 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+Save(Overwrite=True)
+Save(Overwrite=True)
+system1 = GetSystem(Name="Optimization")
+optimizationTask1 = system1.GetContainer(ComponentName="OptimizationTask")
+string1 = optimizationTask1.DynSendCommand(
+    Command="SHOW_NODE_DIALOG",
+    Scope="SYSTEM",
+    Arguments=IronPython.Runtime.PythonDictionary)
+Save(Overwrite=True)
+Save(Overwrite=True)

@@ -1,0 +1,54 @@
+{
+    "hid" : "0.5",
+    "parameters" : 
+    [
+        {
+            "id" : "P1",
+            "name" : "$mag_bredth [mm]",
+            "unit" : null,
+            "value" : 9.0500000000000007
+        },
+        {
+            "id" : "P2",
+            "name" : "$mag_width [mm]",
+            "unit" : null,
+            "value" : 6.9500000000000002
+        },
+        {
+            "id" : "P3",
+            "name" : "$ratio_mod",
+            "unit" : null,
+            "value" : 1.4550000000000001
+        },
+        {
+            "id" : "P4",
+            "name" : "$length_between_row [mm]",
+            "unit" : null,
+            "value" : 2.9249999999999998
+        },
+        {
+            "id" : "P5",
+            "name" : "$move_r [mm]",
+            "unit" : null,
+            "value" : 22.599999999999998
+        }
+    ],
+    "responses" : 
+    [
+        {
+            "id" : "P6",
+            "name" : "mean",
+            "value" : null
+        },
+        {
+            "id" : "P7",
+            "name" : "ppmmath",
+            "value" : null
+        },
+        {
+            "id" : "P8",
+            "name" : "ppmmax",
+            "value" : null
+        }
+    ]
+}
